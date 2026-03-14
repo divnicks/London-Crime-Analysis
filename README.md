@@ -263,17 +263,6 @@ Open the Tableau workbook files (`.twbx`) in Tableau Desktop. Dashboards are pre
 
 ---
 
-## Credits
-
-| Name | Role |
-|------|------|
-| Nicholas-Omoregbe Divine | Project Manager — coordination, timelines, stakeholder management |
-| Kalu, Uche | Data Engineer — ETL pipeline, Hadoop/Hive infrastructure |
-| Sriwatananukulkit, Pathorn | Data Analyst — data cleaning, transformation, analysis |
-| Machannagari, Narayana Reddy | Dashboard Developer — Tableau visualisations and geographic analysis |
-| Ramavath, Kanya Naik | Report Writer — documentation, methodology, findings |
-
-**Module:** Advanced Data Management Project (ADMP), Group 13
 
 ---
 
