@@ -267,7 +267,6 @@ Open the Tableau workbook files (`.twbx`) in Tableau Desktop. Dashboards are pre
 
 ## References
 
-- Belbin, R. M. (2010). *Team roles at work* (2nd ed.). Butterworth-Heinemann.
 - data.police.uk. (2025). Police recorded crime open data. https://data.police.uk/data/archive/
 - data.london.gov.uk. (2025). Metropolitan Police force strength. https://data.london.gov.uk/dataset/police-force-strength
 - Greater London Authority. (2024). *Social deprivation statistics in London*. London Data Commission.
