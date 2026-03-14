@@ -1,0 +1,151 @@
+DROP TABLE IF EXISTS crime_data_raw;
+
+CREATE EXTERNAL TABLE crime_data_raw (
+  crime_id           STRING,
+  time_id            STRING,
+  police_force_name  STRING,
+  longitude          STRING,
+  latitude           STRING,
+  location           STRING,
+  lsoa_code          STRING,
+  lsoa_name          STRING,
+  crime_type         STRING,
+  last_outcome       STRING,
+  year               STRING,
+  quarter            STRING,
+  year_and_month     STRING,
+  month_name         STRING,
+  imd_score          STRING,
+  deprivation_level  STRING,
+  total_officers     STRING,
+  case_status        STRING
+)
+ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
+WITH SERDEPROPERTIES (
+  "separatorChar" = ",",
+  "quoteChar"     = "\"",
+  "escapeChar"    = "\\"
+)
+STORED AS TEXTFILE
+LOCATION '/user/hive/data/crime_data'     -- <<< point to your HDFS folder
+TBLPROPERTIES ("skip.header.line.count"="1");
+
+
+
+
+
+
+
+
+
+
+
+
+DROP TABLE IF EXISTS crime_data;
+
+CREATE TABLE crime_data (
+  crime_id           STRING,
+  time_id            DATE,
+  police_force_name  STRING,
+  longitude          DOUBLE,
+  latitude           DOUBLE,
+  location           STRING,
+  lsoa_code          STRING,
+  lsoa_name          STRING,
+  crime_type         STRING,
+  last_outcome       STRING,
+  year               INT,
+  quarter            INT,
+  year_and_month     STRING,
+  month_name         STRING,
+  imd_score          DOUBLE,
+  deprivation_level  STRING,
+  total_officers     DOUBLE,
+  case_status        STRING
+)
+STORED AS ORC;
+
+
+
+
+
+
+
+
+
+
+
+
+
+USE mydatabase;
+
+WITH src AS (
+  SELECT
+    TRIM(crime_id)                    AS crime_id,
+    time_id                           AS parsed_date,
+    TRIM(police_force_name)          AS police_force_name,
+    CAST(longitude AS DOUBLE)        AS longitude,
+    CAST(latitude AS DOUBLE)         AS latitude,
+    TRIM(location)                   AS location,
+    UPPER(TRIM(lsoa_code))           AS lsoa_code,
+    INITCAP(TRIM(lsoa_name))         AS lsoa_name,
+    TRIM(crime_type)                 AS crime_type,
+    TRIM(last_outcome)               AS last_outcome,
+    CAST(year AS INT)                AS year,
+    CAST(quarter AS INT)             AS quarter,
+    TRIM(year_and_month)             AS year_and_month,
+    INITCAP(TRIM(month_name))        AS month_name,
+    CAST(imd_score AS DOUBLE)        AS imd_score,
+    INITCAP(TRIM(deprivation_level)) AS deprivation_level,
+    CAST(total_officers AS DOUBLE)   AS total_officers,
+    TRIM(case_status)                AS case_status
+  FROM mydatabase.crime_data_raw
+  WHERE
+    LOWER(TRIM(crime_type))        <> 'crime_type' AND
+    LOWER(TRIM(lsoa_code))         <> 'lsoa_code'  AND
+    LOWER(TRIM(police_force_name)) <> 'police_force_name'
+)
+
+
+
+
+
+
+
+
+
+
+
+
+INSERT OVERWRITE TABLE mydatabase.crime_data
+SELECT
+  crime_id,
+  parsed_date                           AS time_id,
+  police_force_name,
+  longitude,
+  latitude,
+  location,
+  lsoa_code,
+  lsoa_name,
+  crime_type,
+  last_outcome,
+  COALESCE(YEAR(parsed_date),    CAST(year_raw    AS INT)) AS year,
+  COALESCE(QUARTER(parsed_date), CAST(quarter_raw AS INT)) AS quarter,
+  year_and_month,
+  month_name,
+  imd_score,
+  deprivation_level,
+  total_officers,
+  case_status_trim                    AS case_status
+FROM src;
+
+
+CREATE DATABASE IF NOT EXISTS mydb
+  COMMENT 'Clean crime data'
+  LOCATION '/user/hive/databases/mydb';
+USE mydb;
+
+
+
+
+

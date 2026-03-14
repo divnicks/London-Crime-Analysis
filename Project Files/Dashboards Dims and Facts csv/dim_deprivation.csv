@@ -1,0 +1,6 @@
+deprivation_id,deprivation_level,imd_min,imd_max
+1,Very Low,NA,14.155
+2,Low,14.155,20.842
+3,Medium,20.842,27.055
+4,High,27.055,33.618
+5,Very High,33.618,NA

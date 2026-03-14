@@ -1,0 +1,264 @@
+
+
+DROP TABLE IF EXISTS fact_table_1;
+CREATE TABLE fact_table_1 (
+  time_id       DATE,    -- FK -> dim_time.time_id
+  crime_type_id INT,     -- FK -> dim_crime_type.crime_type_id
+  location_id   STRING,  -- FK -> dim_location.lsoa_code
+  crime_count   BIGINT
+)
+STORED AS ORC;
+
+-- Populate
+INSERT OVERWRITE TABLE fact_table_1
+SELECT
+  dt.time_id,
+  ct.crime_type_id,
+  l.lsoa_code                            AS location_id,
+  COUNT(*)                               AS crime_count
+FROM crime_data src
+JOIN dim_time dt
+  ON dt.time_id = to_date(date_format(src.time_id,'yyyy-MM-01'))
+JOIN dim_location l
+  ON l.lsoa_code = src.lsoa_code
+JOIN dim_crime_type ct
+  ON ct.crime_type = TRIM(src.crime_type)
+WHERE src.time_id >= to_date('2015-03-01')
+  AND src.time_id <= to_date('2025-03-31')
+GROUP BY dt.time_id, ct.crime_type_id, l.lsoa_code
+ORDER BY dt.time_id, ct.crime_type_id, l.lsoa_code;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DROP TABLE IF EXISTS fact_table_2;
+CREATE TABLE fact_table_2 (
+  time_id         DATE,    -- FK -> dim_time.time_id
+  deprivation_id  INT,     -- FK -> dim_deprivation.deprivation_id
+  location_id     STRING,  -- FK -> dim_location.lsoa_code
+  crime_count     BIGINT
+)
+STORED AS ORC;
+
+INSERT OVERWRITE TABLE fact_table_2
+SELECT
+  dt.time_id,
+  d.deprivation_id,
+  l.lsoa_code                                   AS location_id,
+  COUNT(*)                                      AS crime_count
+FROM crime_data src
+JOIN dim_time dt
+  ON dt.time_id = to_date(date_format(src.time_id,'yyyy-MM-01'))
+JOIN dim_location l
+  ON l.lsoa_code = src.lsoa_code
+JOIN dim_deprivation d
+  ON d.deprivation_level = TRIM(src.deprivation_level)
+WHERE src.time_id BETWEEN to_date('2015-03-01') AND to_date('2025-03-31')
+GROUP BY dt.time_id, d.deprivation_id, l.lsoa_code
+ORDER BY dt.time_id, d.deprivation_id, l.lsoa_code;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DROP TABLE IF EXISTS mydatabase.fact_table_3;
+
+CREATE TABLE mydatabase.fact_table_3 (
+  time_id        DATE,    -- date from crime_data
+  crime_type_id  INT,     -- FK -> dim_crime_type.crime_type_id
+  location_id    STRING,  -- FK -> dim_location.lsoa_code
+  unsolved_count BIGINT,
+  total_count    BIGINT,
+  unsolved_rate  DOUBLE
+)
+STORED AS ORC;
+
+-- Populate (no outcome join; infer unsolved from case_status)
+INSERT OVERWRITE TABLE mydatabase.fact_table_3
+SELECT
+  src.time_id,
+  ct.crime_type_id,
+  UPPER(TRIM(src.lsoa_code))                                        AS location_id,
+  SUM(CASE
+        WHEN LOWER(TRIM(COALESCE(src.case_status,'')))
+             IN ('unsolved','open','pending') THEN 1 ELSE 0
+      END)                                                          AS unsolved_count,
+  COUNT(*)                                                          AS total_count,
+  CASE WHEN COUNT(*) > 0
+       THEN SUM(CASE
+                  WHEN LOWER(TRIM(COALESCE(src.case_status,'')))
+                       IN ('unsolved','open','pending') THEN 1 ELSE 0
+                END) / CAST(COUNT(*) AS DOUBLE)
+       ELSE NULL
+  END                                                               AS unsolved_rate
+FROM mydatabase.crime_data src
+JOIN mydatabase.dim_crime_type ct
+  ON ct.crime_type = TRIM(src.crime_type)   -- matches how we built the dim
+WHERE src.time_id IS NOT NULL
+  AND src.lsoa_code IS NOT NULL AND TRIM(src.lsoa_code) <> ''
+  AND YEAR(src.time_id) BETWEEN 2015 AND 2025
+GROUP BY src.time_id, ct.crime_type_id, UPPER(TRIM(src.lsoa_code))
+ORDER BY src.time_id, ct.crime_type_id, UPPER(TRIM(src.lsoa_code));
+
+
+
+
+
+
+
+DROP TABLE IF EXISTS mydatabase.fact_table_4;
+
+CREATE TABLE IF NOT EXISTS mydatabase.fact_table_4 (
+  time_id        DATE,
+  location_id    STRING,
+  deprivation_id INT,
+  crime_type_id  INT,
+  crime_count    BIGINT
+)
+STORED AS ORC;
+
+INSERT OVERWRITE TABLE mydatabase.fact_table_4
+SELECT
+  CAST(s.time_id AS DATE)                 AS time_id,
+  UPPER(TRIM(s.lsoa_code))                AS location_id,
+  d.deprivation_id                        AS deprivation_id,
+  ct.crime_type_id                        AS crime_type_id,
+  COUNT(*)                                AS crime_count
+FROM mydatabase.crime_data s
+JOIN mydatabase.dim_location l
+  ON l.lsoa_code = UPPER(TRIM(s.lsoa_code))
+JOIN mydatabase.dim_crime_type ct
+  ON REGEXP_REPLACE(LOWER(TRIM(ct.crime_type)),'&','and')
+   = REGEXP_REPLACE(LOWER(TRIM(s.crime_type)),'&','and')
+JOIN mydatabase.dim_deprivation d
+  ON ( (d.imd_min IS NULL OR CAST(s.imd_score AS DOUBLE) >= d.imd_min)
+       AND (d.imd_max IS NULL OR CAST(s.imd_score AS DOUBLE) <  d.imd_max) )
+WHERE s.time_id IS NOT NULL
+  AND s.lsoa_code IS NOT NULL AND TRIM(s.lsoa_code) <> ''
+  AND s.imd_score IS NOT NULL
+  AND YEAR(CAST(s.time_id AS DATE)) BETWEEN 2015 AND 2025
+  AND REGEXP_REPLACE(LOWER(TRIM(s.crime_type)),'&','and')
+      IN ('violence and sexual offences','violent and sexual offences')
+GROUP BY
+  CAST(s.time_id AS DATE),
+  UPPER(TRIM(s.lsoa_code)),
+  d.deprivation_id,
+  ct.crime_type_id;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CREATE TABLE IF NOT EXISTS mydatabase.fact_table_5 (
+  time_id          DATE,    -- month-level date
+  location_id      STRING,  -- FK -> dim_location.lsoa_code
+  solved_count     BIGINT,
+  total_count      BIGINT,
+  solve_rate       DOUBLE,
+  avg_police_staff DOUBLE
+)
+STORED AS ORC;
+
+-- 2) Populate
+INSERT OVERWRITE TABLE mydatabase.fact_table_5
+SELECT
+  a.time_id,
+  a.location_id,
+  a.solved_count,
+  a.total_count,
+  CASE WHEN a.total_count > 0
+       THEN a.solved_count / CAST(a.total_count AS DOUBLE)
+       ELSE NULL
+  END AS solve_rate,
+  s.avg_police_staff
+FROM
+(
+  -- monthly solved/total by location for Metropolitan Police only
+  SELECT
+    src.time_id                              AS time_id,     -- already DATE
+    TRIM(src.lsoa_code)                      AS location_id,
+    SUM(CASE WHEN LOWER(o.case_status)='solved' THEN 1 ELSE 0 END) AS solved_count,
+    COUNT(*)                                 AS total_count
+  FROM mydatabase.crime_data src
+  JOIN mydatabase.dim_time t
+    ON t.time_id = src.time_id
+  JOIN mydatabase.dim_location l
+    ON l.lsoa_code = src.lsoa_code
+  JOIN mydatabase.dim_outcome_type o
+    ON o.last_outcome = COALESCE(NULLIF(TRIM(src.last_outcome), ''), 'Unknown')
+   AND o.case_status  = COALESCE(NULLIF(TRIM(src.case_status),  ''), 'Unknown')
+  WHERE UPPER(TRIM(src.police_force_name)) = 'METROPOLITAN POLICE SERVICE'
+    AND src.time_id  IS NOT NULL                 -- no TRIM on DATE
+    AND src.lsoa_code IS NOT NULL AND TRIM(src.lsoa_code) <> ''
+    AND YEAR(src.time_id) BETWEEN 2015 AND 2025
+  GROUP BY src.time_id, TRIM(src.lsoa_code)
+) a
+LEFT JOIN
+(
+  -- monthly average staff for Met (average of distinct monthly values)
+  SELECT
+    d.time_id                                  AS time_id,
+    AVG(d.total_officers_val)                  AS avg_police_staff
+  FROM
+  (
+    SELECT DISTINCT
+      time_id                                  AS time_id,   -- DATE
+      total_officers                           AS total_officers_val
+    FROM mydatabase.crime_data
+    WHERE UPPER(TRIM(police_force_name)) = 'METROPOLITAN POLICE SERVICE'
+      AND total_officers IS NOT NULL
+      AND YEAR(time_id) BETWEEN 2015 AND 2025
+  ) d
+  GROUP BY d.time_id
+) s
+  ON s.time_id = a.time_id
+ORDER BY a.time_id, a.location_id;
+

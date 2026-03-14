@@ -1,0 +1,29 @@
+outcome_id,last_outcome,case_status,is_solved
+1,Action to be taken by another organisation,unsolved,0
+2,Awaiting court outcome,unknown,0
+3,Court case unable to proceed,unsolved,0
+4,Court result unavailable,unknown,0
+5,Defendant found not guilty,unsolved,0
+6,Defendant sent to Crown Court,solved,1
+7,Formal action is not in the public interest,unsolved,0
+8,Further action is not in the public interest,unsolved,0
+9,Further investigation is not in the public interest,unsolved,0
+10,Investigation complete; no suspect identified,unsolved,0
+11,Local resolution,solved,1
+12,Offender deprived of property,solved,1
+13,Offender fined,solved,1
+14,Offender given a caution,solved,1
+15,Offender given a drugs possession warning,solved,1
+16,Offender given absolute discharge,solved,1
+17,Offender given community sentence,solved,1
+18,Offender given conditional discharge,solved,1
+19,Offender given penalty notice,solved,1
+20,Offender given suspended prison sentence,solved,1
+21,Offender ordered to pay compensation,solved,1
+22,Offender otherwise dealt with,solved,1
+23,Offender sent to prison,solved,1
+24,Status update unavailable,unknown,0
+25,Suspect charged as part of another case,solved,1
+26,Unable to prosecute suspect,unsolved,0
+27,Under investigation,unknown,0
+28,no record,unknown,0

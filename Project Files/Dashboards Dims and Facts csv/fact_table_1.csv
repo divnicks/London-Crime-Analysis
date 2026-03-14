@@ -1,0 +1,1695 @@
+time_id,crime_type,crime_count
+2015-03-01,Anti-Social Behaviour,17067
+2015-03-01,Bicycle Theft,1321
+2015-03-01,Burglary,6210
+2015-03-01,Criminal Damage And Arson,5119
+2015-03-01,Drugs,2795
+2015-03-01,Other Crime,785
+2015-03-01,Other Theft,9860
+2015-03-01,Possession Of Weapons,304
+2015-03-01,Public Order,3326
+2015-03-01,Robbery,1718
+2015-03-01,Shoplifting,3790
+2015-03-01,Theft From The Person,3311
+2015-03-01,Vehicle Crime,6951
+2015-03-01,Violence And Sexual Offences,14683
+2015-04-01,Anti-Social Behaviour,18599
+2015-04-01,Bicycle Theft,1485
+2015-04-01,Burglary,5345
+2015-04-01,Criminal Damage And Arson,5052
+2015-04-01,Drugs,2646
+2015-04-01,Other Crime,695
+2015-04-01,Other Theft,8716
+2015-04-01,Possession Of Weapons,285
+2015-04-01,Public Order,3256
+2015-04-01,Robbery,1643
+2015-04-01,Shoplifting,3749
+2015-04-01,Theft From The Person,3336
+2015-04-01,Vehicle Crime,6520
+2015-04-01,Violence And Sexual Offences,12592
+2015-05-01,Anti-Social Behaviour,19924
+2015-05-01,Bicycle Theft,1747
+2015-05-01,Burglary,5490
+2015-05-01,Criminal Damage And Arson,5298
+2015-05-01,Drugs,2683
+2015-05-01,Other Crime,727
+2015-05-01,Other Theft,9523
+2015-05-01,Possession Of Weapons,284
+2015-05-01,Public Order,3445
+2015-05-01,Robbery,1761
+2015-05-01,Shoplifting,3721
+2015-05-01,Theft From The Person,3565
+2015-05-01,Vehicle Crime,6927
+2015-05-01,Violence And Sexual Offences,13864
+2015-06-01,Anti-Social Behaviour,21664
+2015-06-01,Bicycle Theft,1812
+2015-06-01,Burglary,5238
+2015-06-01,Criminal Damage And Arson,5217
+2015-06-01,Drugs,2806
+2015-06-01,Other Crime,735
+2015-06-01,Other Theft,9731
+2015-06-01,Possession Of Weapons,306
+2015-06-01,Public Order,3656
+2015-06-01,Robbery,1614
+2015-06-01,Shoplifting,3605
+2015-06-01,Theft From The Person,2996
+2015-06-01,Vehicle Crime,7174
+2015-06-01,Violence And Sexual Offences,15430
+2015-07-01,Anti-Social Behaviour,23660
+2015-07-01,Bicycle Theft,1861
+2015-07-01,Burglary,5333
+2015-07-01,Criminal Damage And Arson,5344
+2015-07-01,Drugs,2948
+2015-07-01,Other Crime,774
+2015-07-01,Other Theft,10147
+2015-07-01,Possession Of Weapons,314
+2015-07-01,Public Order,3769
+2015-07-01,Robbery,1658
+2015-07-01,Shoplifting,3543
+2015-07-01,Theft From The Person,2976
+2015-07-01,Vehicle Crime,6582
+2015-07-01,Violence And Sexual Offences,16185
+2015-08-01,Anti-Social Behaviour,22127
+2015-08-01,Bicycle Theft,1575
+2015-08-01,Burglary,5308
+2015-08-01,Criminal Damage And Arson,4862
+2015-08-01,Drugs,2953
+2015-08-01,Other Crime,699
+2015-08-01,Other Theft,9245
+2015-08-01,Possession Of Weapons,329
+2015-08-01,Public Order,3538
+2015-08-01,Robbery,1669
+2015-08-01,Shoplifting,3524
+2015-08-01,Theft From The Person,2688
+2015-08-01,Vehicle Crime,6391
+2015-08-01,Violence And Sexual Offences,15008
+2015-09-01,Anti-Social Behaviour,18133
+2015-09-01,Bicycle Theft,1540
+2015-09-01,Burglary,5350
+2015-09-01,Criminal Damage And Arson,4671
+2015-09-01,Drugs,2932
+2015-09-01,Other Crime,805
+2015-09-01,Other Theft,9266
+2015-09-01,Possession Of Weapons,307
+2015-09-01,Public Order,3544
+2015-09-01,Robbery,1653
+2015-09-01,Shoplifting,3332
+2015-09-01,Theft From The Person,2781
+2015-09-01,Vehicle Crime,6559
+2015-09-01,Violence And Sexual Offences,14892
+2015-10-01,Anti-Social Behaviour,20903
+2015-10-01,Bicycle Theft,1618
+2015-10-01,Burglary,5860
+2015-10-01,Criminal Damage And Arson,5114
+2015-10-01,Drugs,3155
+2015-10-01,Other Crime,838
+2015-10-01,Other Theft,9798
+2015-10-01,Possession Of Weapons,346
+2015-10-01,Public Order,3655
+2015-10-01,Robbery,1686
+2015-10-01,Shoplifting,3789
+2015-10-01,Theft From The Person,3164
+2015-10-01,Vehicle Crime,7030
+2015-10-01,Violence And Sexual Offences,16231
+2015-11-01,Anti-Social Behaviour,17776
+2015-11-01,Bicycle Theft,1357
+2015-11-01,Burglary,6674
+2015-11-01,Criminal Damage And Arson,5191
+2015-11-01,Drugs,2809
+2015-11-01,Other Crime,768
+2015-11-01,Other Theft,9623
+2015-11-01,Possession Of Weapons,336
+2015-11-01,Public Order,3686
+2015-11-01,Robbery,1766
+2015-11-01,Shoplifting,3771
+2015-11-01,Theft From The Person,3504
+2015-11-01,Vehicle Crime,7387
+2015-11-01,Violence And Sexual Offences,15856
+2015-12-01,Anti-Social Behaviour,15907
+2015-12-01,Bicycle Theft,1050
+2015-12-01,Burglary,6331
+2015-12-01,Criminal Damage And Arson,5194
+2015-12-01,Drugs,2615
+2015-12-01,Other Crime,726
+2015-12-01,Other Theft,9636
+2015-12-01,Possession Of Weapons,262
+2015-12-01,Public Order,3546
+2015-12-01,Robbery,1667
+2015-12-01,Shoplifting,3748
+2015-12-01,Theft From The Person,3582
+2015-12-01,Vehicle Crime,6871
+2015-12-01,Violence And Sexual Offences,15710
+2016-01-01,Anti-Social Behaviour,14976
+2016-01-01,Bicycle Theft,1044
+2016-01-01,Burglary,6193
+2016-01-01,Criminal Damage And Arson,4831
+2016-01-01,Drugs,3288
+2016-01-01,Other Crime,775
+2016-01-01,Other Theft,8515
+2016-01-01,Possession Of Weapons,310
+2016-01-01,Public Order,3276
+2016-01-01,Robbery,1690
+2016-01-01,Shoplifting,3665
+2016-01-01,Theft From The Person,3209
+2016-01-01,Vehicle Crime,6732
+2016-01-01,Violence And Sexual Offences,15228
+2016-02-01,Anti-Social Behaviour,15045
+2016-02-01,Bicycle Theft,1000
+2016-02-01,Burglary,5773
+2016-02-01,Criminal Damage And Arson,4716
+2016-02-01,Drugs,2917
+2016-02-01,Other Crime,742
+2016-02-01,Other Theft,8218
+2016-02-01,Possession Of Weapons,262
+2016-02-01,Public Order,2933
+2016-02-01,Robbery,1511
+2016-02-01,Shoplifting,3749
+2016-02-01,Theft From The Person,2697
+2016-02-01,Vehicle Crime,6369
+2016-02-01,Violence And Sexual Offences,14233
+2016-03-01,Anti-Social Behaviour,16272
+2016-03-01,Bicycle Theft,1155
+2016-03-01,Burglary,5712
+2016-03-01,Criminal Damage And Arson,4765
+2016-03-01,Drugs,2821
+2016-03-01,Other Crime,754
+2016-03-01,Other Theft,8259
+2016-03-01,Possession Of Weapons,280
+2016-03-01,Public Order,3208
+2016-03-01,Robbery,1577
+2016-03-01,Shoplifting,3966
+2016-03-01,Theft From The Person,2769
+2016-03-01,Vehicle Crime,6941
+2016-03-01,Violence And Sexual Offences,15120
+2016-04-01,Anti-Social Behaviour,17391
+2016-04-01,Bicycle Theft,1377
+2016-04-01,Burglary,5191
+2016-04-01,Criminal Damage And Arson,4975
+2016-04-01,Drugs,2945
+2016-04-01,Other Crime,837
+2016-04-01,Other Theft,8713
+2016-04-01,Possession Of Weapons,325
+2016-04-01,Public Order,3421
+2016-04-01,Robbery,1438
+2016-04-01,Shoplifting,4204
+2016-04-01,Theft From The Person,2761
+2016-04-01,Vehicle Crime,6765
+2016-04-01,Violence And Sexual Offences,15148
+2016-05-01,Anti-Social Behaviour,21356
+2016-05-01,Bicycle Theft,1761
+2016-05-01,Burglary,5319
+2016-05-01,Criminal Damage And Arson,5708
+2016-05-01,Drugs,2848
+2016-05-01,Other Crime,942
+2016-05-01,Other Theft,9309
+2016-05-01,Possession Of Weapons,379
+2016-05-01,Public Order,3882
+2016-05-01,Robbery,1644
+2016-05-01,Shoplifting,4425
+2016-05-01,Theft From The Person,3002
+2016-05-01,Vehicle Crime,7701
+2016-05-01,Violence And Sexual Offences,16899
+2016-06-01,Anti-Social Behaviour,21884
+2016-06-01,Bicycle Theft,1689
+2016-06-01,Burglary,5217
+2016-06-01,Criminal Damage And Arson,5145
+2016-06-01,Drugs,2678
+2016-06-01,Other Crime,847
+2016-06-01,Other Theft,9153
+2016-06-01,Possession Of Weapons,451
+2016-06-01,Public Order,4136
+2016-06-01,Robbery,1766
+2016-06-01,Shoplifting,4058
+2016-06-01,Theft From The Person,3343
+2016-06-01,Vehicle Crime,7410
+2016-06-01,Violence And Sexual Offences,16519
+2016-07-01,Anti-Social Behaviour,26192
+2016-07-01,Bicycle Theft,2016
+2016-07-01,Burglary,5321
+2016-07-01,Criminal Damage And Arson,5620
+2016-07-01,Drugs,2975
+2016-07-01,Other Crime,900
+2016-07-01,Other Theft,9807
+2016-07-01,Possession Of Weapons,423
+2016-07-01,Public Order,4816
+2016-07-01,Robbery,1820
+2016-07-01,Shoplifting,4029
+2016-07-01,Theft From The Person,3383
+2016-07-01,Vehicle Crime,7478
+2016-07-01,Violence And Sexual Offences,17201
+2016-08-01,Anti-Social Behaviour,25745
+2016-08-01,Bicycle Theft,1966
+2016-08-01,Burglary,5345
+2016-08-01,Criminal Damage And Arson,5427
+2016-08-01,Drugs,3030
+2016-08-01,Other Crime,819
+2016-08-01,Other Theft,9800
+2016-08-01,Possession Of Weapons,432
+2016-08-01,Public Order,4122
+2016-08-01,Robbery,1782
+2016-08-01,Shoplifting,3873
+2016-08-01,Theft From The Person,3264
+2016-08-01,Vehicle Crime,7389
+2016-08-01,Violence And Sexual Offences,15750
+2016-09-01,Anti-Social Behaviour,22291
+2016-09-01,Bicycle Theft,2120
+2016-09-01,Burglary,5226
+2016-09-01,Criminal Damage And Arson,4973
+2016-09-01,Drugs,2675
+2016-09-01,Other Crime,784
+2016-09-01,Other Theft,9044
+2016-09-01,Possession Of Weapons,372
+2016-09-01,Public Order,3698
+2016-09-01,Robbery,1810
+2016-09-01,Shoplifting,3719
+2016-09-01,Theft From The Person,2885
+2016-09-01,Vehicle Crime,7646
+2016-09-01,Violence And Sexual Offences,15346
+2016-10-01,Anti-Social Behaviour,22884
+2016-10-01,Bicycle Theft,2094
+2016-10-01,Burglary,5408
+2016-10-01,Criminal Damage And Arson,5210
+2016-10-01,Drugs,2853
+2016-10-01,Other Crime,825
+2016-10-01,Other Theft,9753
+2016-10-01,Possession Of Weapons,384
+2016-10-01,Public Order,3818
+2016-10-01,Robbery,1892
+2016-10-01,Shoplifting,3910
+2016-10-01,Theft From The Person,3163
+2016-10-01,Vehicle Crime,8252
+2016-10-01,Violence And Sexual Offences,15813
+2016-11-01,Anti-Social Behaviour,18838
+2016-11-01,Bicycle Theft,1662
+2016-11-01,Burglary,5945
+2016-11-01,Criminal Damage And Arson,4919
+2016-11-01,Drugs,2535
+2016-11-01,Other Crime,796
+2016-11-01,Other Theft,9225
+2016-11-01,Possession Of Weapons,326
+2016-11-01,Public Order,3547
+2016-11-01,Robbery,1833
+2016-11-01,Shoplifting,3846
+2016-11-01,Theft From The Person,3717
+2016-11-01,Vehicle Crime,7939
+2016-11-01,Violence And Sexual Offences,15259
+2016-12-01,Anti-Social Behaviour,17676
+2016-12-01,Bicycle Theft,1186
+2016-12-01,Burglary,6538
+2016-12-01,Criminal Damage And Arson,5102
+2016-12-01,Drugs,2387
+2016-12-01,Other Crime,765
+2016-12-01,Other Theft,9406
+2016-12-01,Possession Of Weapons,300
+2016-12-01,Public Order,3436
+2016-12-01,Robbery,2070
+2016-12-01,Shoplifting,4007
+2016-12-01,Theft From The Person,4228
+2016-12-01,Vehicle Crime,7731
+2016-12-01,Violence And Sexual Offences,15602
+2017-01-01,Anti-Social Behaviour,17029
+2017-01-01,Bicycle Theft,1209
+2017-01-01,Burglary,6525
+2017-01-01,Criminal Damage And Arson,4860
+2017-01-01,Drugs,2567
+2017-01-01,Other Crime,803
+2017-01-01,Other Theft,8534
+2017-01-01,Possession Of Weapons,368
+2017-01-01,Public Order,3185
+2017-01-01,Robbery,1857
+2017-01-01,Shoplifting,3839
+2017-01-01,Theft From The Person,3474
+2017-01-01,Vehicle Crime,7713
+2017-01-01,Violence And Sexual Offences,14755
+2017-02-01,Anti-Social Behaviour,15798
+2017-02-01,Bicycle Theft,1145
+2017-02-01,Burglary,6000
+2017-02-01,Criminal Damage And Arson,4752
+2017-02-01,Drugs,2213
+2017-02-01,Other Crime,695
+2017-02-01,Other Theft,8381
+2017-02-01,Possession Of Weapons,399
+2017-02-01,Public Order,3292
+2017-02-01,Robbery,1772
+2017-02-01,Shoplifting,3978
+2017-02-01,Theft From The Person,3501
+2017-02-01,Vehicle Crime,7380
+2017-02-01,Violence And Sexual Offences,14516
+2017-03-01,Anti-Social Behaviour,19089
+2017-03-01,Bicycle Theft,1659
+2017-03-01,Burglary,6267
+2017-03-01,Criminal Damage And Arson,5232
+2017-03-01,Drugs,2771
+2017-03-01,Other Crime,819
+2017-03-01,Other Theft,9553
+2017-03-01,Possession Of Weapons,494
+2017-03-01,Public Order,4076
+2017-03-01,Robbery,2318
+2017-03-01,Shoplifting,4310
+2017-03-01,Theft From The Person,4590
+2017-03-01,Vehicle Crime,8839
+2017-03-01,Violence And Sexual Offences,17084
+2017-04-01,Anti-Social Behaviour,19946
+2017-04-01,Bicycle Theft,1740
+2017-04-01,Burglary,5544
+2017-04-01,Criminal Damage And Arson,4909
+2017-04-01,Drugs,2371
+2017-04-01,Other Crime,679
+2017-04-01,Other Theft,8484
+2017-04-01,Possession Of Weapons,454
+2017-04-01,Public Order,3498
+2017-04-01,Robbery,2191
+2017-04-01,Shoplifting,3794
+2017-04-01,Theft From The Person,3892
+2017-04-01,Vehicle Crime,8116
+2017-04-01,Violence And Sexual Offences,14947
+2017-05-01,Anti-Social Behaviour,20484
+2017-05-01,Bicycle Theft,1999
+2017-05-01,Burglary,5724
+2017-05-01,Criminal Damage And Arson,5405
+2017-05-01,Drugs,2625
+2017-05-01,Other Crime,789
+2017-05-01,Other Theft,9688
+2017-05-01,Possession Of Weapons,584
+2017-05-01,Public Order,4244
+2017-05-01,Robbery,2244
+2017-05-01,Shoplifting,4364
+2017-05-01,Theft From The Person,4339
+2017-05-01,Vehicle Crime,9089
+2017-05-01,Violence And Sexual Offences,17241
+2017-06-01,Anti-Social Behaviour,19485
+2017-06-01,Bicycle Theft,2380
+2017-06-01,Burglary,5627
+2017-06-01,Criminal Damage And Arson,5286
+2017-06-01,Drugs,2390
+2017-06-01,Other Crime,782
+2017-06-01,Other Theft,9240
+2017-06-01,Possession Of Weapons,546
+2017-06-01,Public Order,4821
+2017-06-01,Robbery,2303
+2017-06-01,Shoplifting,3755
+2017-06-01,Theft From The Person,4268
+2017-06-01,Vehicle Crime,8283
+2017-06-01,Violence And Sexual Offences,17710
+2017-07-01,Anti-Social Behaviour,23020
+2017-07-01,Bicycle Theft,2623
+2017-07-01,Burglary,6106
+2017-07-01,Criminal Damage And Arson,5296
+2017-07-01,Drugs,2800
+2017-07-01,Other Crime,833
+2017-07-01,Other Theft,9784
+2017-07-01,Possession Of Weapons,553
+2017-07-01,Public Order,4774
+2017-07-01,Robbery,2694
+2017-07-01,Shoplifting,4081
+2017-07-01,Theft From The Person,4773
+2017-07-01,Vehicle Crime,8511
+2017-07-01,Violence And Sexual Offences,17840
+2017-08-01,Anti-Social Behaviour,22216
+2017-08-01,Bicycle Theft,2384
+2017-08-01,Burglary,6187
+2017-08-01,Criminal Damage And Arson,5091
+2017-08-01,Drugs,3034
+2017-08-01,Other Crime,871
+2017-08-01,Other Theft,9679
+2017-08-01,Possession Of Weapons,592
+2017-08-01,Public Order,4099
+2017-08-01,Robbery,2465
+2017-08-01,Shoplifting,4285
+2017-08-01,Theft From The Person,4421
+2017-08-01,Vehicle Crime,8519
+2017-08-01,Violence And Sexual Offences,16023
+2017-09-01,Anti-Social Behaviour,18583
+2017-09-01,Bicycle Theft,2328
+2017-09-01,Burglary,5950
+2017-09-01,Criminal Damage And Arson,4846
+2017-09-01,Drugs,2765
+2017-09-01,Other Crime,852
+2017-09-01,Other Theft,9124
+2017-09-01,Possession Of Weapons,502
+2017-09-01,Public Order,3924
+2017-09-01,Robbery,2522
+2017-09-01,Shoplifting,3930
+2017-09-01,Theft From The Person,3926
+2017-09-01,Vehicle Crime,8803
+2017-09-01,Violence And Sexual Offences,16216
+2017-10-01,Anti-Social Behaviour,20544
+2017-10-01,Bicycle Theft,2081
+2017-10-01,Burglary,6598
+2017-10-01,Criminal Damage And Arson,5349
+2017-10-01,Drugs,3107
+2017-10-01,Other Crime,878
+2017-10-01,Other Theft,9523
+2017-10-01,Possession Of Weapons,579
+2017-10-01,Public Order,4310
+2017-10-01,Robbery,2796
+2017-10-01,Shoplifting,3977
+2017-10-01,Theft From The Person,4347
+2017-10-01,Vehicle Crime,9171
+2017-10-01,Violence And Sexual Offences,17716
+2017-11-01,Anti-Social Behaviour,16550
+2017-11-01,Bicycle Theft,1738
+2017-11-01,Burglary,7239
+2017-11-01,Criminal Damage And Arson,5158
+2017-11-01,Drugs,2885
+2017-11-01,Other Crime,874
+2017-11-01,Other Theft,9561
+2017-11-01,Possession Of Weapons,539
+2017-11-01,Public Order,3932
+2017-11-01,Robbery,2877
+2017-11-01,Shoplifting,4043
+2017-11-01,Theft From The Person,4891
+2017-11-01,Vehicle Crime,9163
+2017-11-01,Violence And Sexual Offences,16819
+2017-12-01,Anti-Social Behaviour,15171
+2017-12-01,Bicycle Theft,1025
+2017-12-01,Burglary,6895
+2017-12-01,Criminal Damage And Arson,4707
+2017-12-01,Drugs,2378
+2017-12-01,Other Crime,723
+2017-12-01,Other Theft,9285
+2017-12-01,Possession Of Weapons,417
+2017-12-01,Public Order,3342
+2017-12-01,Robbery,2610
+2017-12-01,Shoplifting,3541
+2017-12-01,Theft From The Person,4628
+2017-12-01,Vehicle Crime,8450
+2017-12-01,Violence And Sexual Offences,15991
+2018-01-01,Anti-Social Behaviour,16049
+2018-01-01,Bicycle Theft,1218
+2018-01-01,Burglary,7554
+2018-01-01,Criminal Damage And Arson,4908
+2018-01-01,Drugs,2877
+2018-01-01,Other Crime,859
+2018-01-01,Other Theft,9163
+2018-01-01,Possession Of Weapons,549
+2018-01-01,Public Order,3549
+2018-01-01,Robbery,2620
+2018-01-01,Shoplifting,3932
+2018-01-01,Theft From The Person,3924
+2018-01-01,Vehicle Crime,9349
+2018-01-01,Violence And Sexual Offences,16202
+2018-02-01,Anti-Social Behaviour,14076
+2018-02-01,Bicycle Theft,1078
+2018-02-01,Burglary,6520
+2018-02-01,Criminal Damage And Arson,4282
+2018-02-01,Drugs,2586
+2018-02-01,Other Crime,748
+2018-02-01,Other Theft,8568
+2018-02-01,Possession Of Weapons,459
+2018-02-01,Public Order,3385
+2018-02-01,Robbery,2238
+2018-02-01,Shoplifting,3646
+2018-02-01,Theft From The Person,3723
+2018-02-01,Vehicle Crime,8682
+2018-02-01,Violence And Sexual Offences,14710
+2018-03-01,Anti-Social Behaviour,16168
+2018-03-01,Bicycle Theft,1069
+2018-03-01,Burglary,6313
+2018-03-01,Criminal Damage And Arson,4613
+2018-03-01,Drugs,2550
+2018-03-01,Other Crime,874
+2018-03-01,Other Theft,9086
+2018-03-01,Possession Of Weapons,532
+2018-03-01,Public Order,3974
+2018-03-01,Robbery,2366
+2018-03-01,Shoplifting,3757
+2018-03-01,Theft From The Person,4044
+2018-03-01,Vehicle Crime,8864
+2018-03-01,Violence And Sexual Offences,16941
+2018-04-01,Anti-Social Behaviour,19932
+2018-04-01,Bicycle Theft,1394
+2018-04-01,Burglary,6305
+2018-04-01,Criminal Damage And Arson,4748
+2018-04-01,Drugs,2745
+2018-04-01,Other Crime,787
+2018-04-01,Other Theft,9118
+2018-04-01,Possession Of Weapons,498
+2018-04-01,Public Order,3983
+2018-04-01,Robbery,2310
+2018-04-01,Shoplifting,3874
+2018-04-01,Theft From The Person,3659
+2018-04-01,Vehicle Crime,8839
+2018-04-01,Violence And Sexual Offences,16039
+2018-05-01,Anti-Social Behaviour,18650
+2018-05-01,Bicycle Theft,1879
+2018-05-01,Burglary,6331
+2018-05-01,Criminal Damage And Arson,4994
+2018-05-01,Drugs,2773
+2018-05-01,Other Crime,889
+2018-05-01,Other Theft,9844
+2018-05-01,Possession Of Weapons,570
+2018-05-01,Public Order,4289
+2018-05-01,Robbery,2386
+2018-05-01,Shoplifting,3949
+2018-05-01,Theft From The Person,3488
+2018-05-01,Vehicle Crime,8798
+2018-05-01,Violence And Sexual Offences,17898
+2018-06-01,Anti-Social Behaviour,19384
+2018-06-01,Bicycle Theft,2012
+2018-06-01,Burglary,6052
+2018-06-01,Criminal Damage And Arson,4789
+2018-06-01,Drugs,2432
+2018-06-01,Other Crime,821
+2018-06-01,Other Theft,9434
+2018-06-01,Possession Of Weapons,529
+2018-06-01,Public Order,4232
+2018-06-01,Robbery,2612
+2018-06-01,Shoplifting,3759
+2018-06-01,Theft From The Person,4003
+2018-06-01,Vehicle Crime,8907
+2018-06-01,Violence And Sexual Offences,17980
+2018-07-01,Anti-Social Behaviour,21322
+2018-07-01,Bicycle Theft,2468
+2018-07-01,Burglary,6257
+2018-07-01,Criminal Damage And Arson,4997
+2018-07-01,Drugs,2368
+2018-07-01,Other Crime,836
+2018-07-01,Other Theft,10645
+2018-07-01,Possession Of Weapons,545
+2018-07-01,Public Order,4807
+2018-07-01,Robbery,2684
+2018-07-01,Shoplifting,3586
+2018-07-01,Theft From The Person,4077
+2018-07-01,Vehicle Crime,9004
+2018-07-01,Violence And Sexual Offences,19319
+2018-08-01,Anti-Social Behaviour,19977
+2018-08-01,Bicycle Theft,2221
+2018-08-01,Burglary,6451
+2018-08-01,Criminal Damage And Arson,4550
+2018-08-01,Drugs,3103
+2018-08-01,Other Crime,793
+2018-08-01,Other Theft,9916
+2018-08-01,Possession Of Weapons,474
+2018-08-01,Public Order,3934
+2018-08-01,Robbery,2325
+2018-08-01,Shoplifting,3671
+2018-08-01,Theft From The Person,3601
+2018-08-01,Vehicle Crime,9136
+2018-08-01,Violence And Sexual Offences,16588
+2018-09-01,Anti-Social Behaviour,17825
+2018-09-01,Bicycle Theft,2324
+2018-09-01,Burglary,6027
+2018-09-01,Criminal Damage And Arson,4459
+2018-09-01,Drugs,2774
+2018-09-01,Other Crime,824
+2018-09-01,Other Theft,9852
+2018-09-01,Possession Of Weapons,496
+2018-09-01,Public Order,3930
+2018-09-01,Robbery,2398
+2018-09-01,Shoplifting,3485
+2018-09-01,Theft From The Person,3310
+2018-09-01,Vehicle Crime,9684
+2018-09-01,Violence And Sexual Offences,16804
+2018-10-01,Anti-Social Behaviour,22399
+2018-10-01,Bicycle Theft,2285
+2018-10-01,Burglary,7100
+2018-10-01,Criminal Damage And Arson,4813
+2018-10-01,Drugs,2881
+2018-10-01,Other Crime,809
+2018-10-01,Other Theft,10859
+2018-10-01,Possession Of Weapons,533
+2018-10-01,Public Order,4115
+2018-10-01,Robbery,2650
+2018-10-01,Shoplifting,3849
+2018-10-01,Theft From The Person,4209
+2018-10-01,Vehicle Crime,10389
+2018-10-01,Violence And Sexual Offences,17395
+2018-11-01,Anti-Social Behaviour,17962
+2018-11-01,Bicycle Theft,1621
+2018-11-01,Burglary,7822
+2018-11-01,Criminal Damage And Arson,4688
+2018-11-01,Drugs,3037
+2018-11-01,Other Crime,840
+2018-11-01,Other Theft,10924
+2018-11-01,Possession Of Weapons,714
+2018-11-01,Public Order,3942
+2018-11-01,Robbery,2777
+2018-11-01,Shoplifting,3684
+2018-11-01,Theft From The Person,4877
+2018-11-01,Vehicle Crime,10353
+2018-11-01,Violence And Sexual Offences,16972
+2018-12-01,Anti-Social Behaviour,16561
+2018-12-01,Bicycle Theft,1135
+2018-12-01,Burglary,7072
+2018-12-01,Criminal Damage And Arson,4753
+2018-12-01,Drugs,2975
+2018-12-01,Other Crime,721
+2018-12-01,Other Theft,11166
+2018-12-01,Possession Of Weapons,550
+2018-12-01,Public Order,3712
+2018-12-01,Robbery,2733
+2018-12-01,Shoplifting,3336
+2018-12-01,Theft From The Person,5157
+2018-12-01,Vehicle Crime,9499
+2018-12-01,Violence And Sexual Offences,16783
+2019-01-01,Anti-Social Behaviour,16937
+2019-01-01,Bicycle Theft,1323
+2019-01-01,Burglary,7453
+2019-01-01,Criminal Damage And Arson,4570
+2019-01-01,Drugs,3206
+2019-01-01,Other Crime,761
+2019-01-01,Other Theft,11044
+2019-01-01,Possession Of Weapons,512
+2019-01-01,Public Order,3513
+2019-01-01,Robbery,2695
+2019-01-01,Shoplifting,3511
+2019-01-01,Theft From The Person,4400
+2019-01-01,Vehicle Crime,10753
+2019-01-01,Violence And Sexual Offences,16469
+2019-02-01,Anti-Social Behaviour,16883
+2019-02-01,Bicycle Theft,1231
+2019-02-01,Burglary,6642
+2019-02-01,Criminal Damage And Arson,4322
+2019-02-01,Drugs,3170
+2019-02-01,Other Crime,763
+2019-02-01,Other Theft,10913
+2019-02-01,Possession Of Weapons,498
+2019-02-01,Public Order,3678
+2019-02-01,Robbery,2697
+2019-02-01,Shoplifting,3509
+2019-02-01,Theft From The Person,5359
+2019-02-01,Vehicle Crime,9567
+2019-02-01,Violence And Sexual Offences,15798
+2019-03-01,Anti-Social Behaviour,18941
+2019-03-01,Bicycle Theft,1546
+2019-03-01,Burglary,7174
+2019-03-01,Criminal Damage And Arson,4946
+2019-03-01,Drugs,4007
+2019-03-01,Other Crime,890
+2019-03-01,Other Theft,11709
+2019-03-01,Possession Of Weapons,656
+2019-03-01,Public Order,4434
+2019-03-01,Robbery,2931
+2019-03-01,Shoplifting,3795
+2019-03-01,Theft From The Person,5969
+2019-03-01,Vehicle Crime,10652
+2019-03-01,Violence And Sexual Offences,17846
+2019-04-01,Anti-Social Behaviour,19520
+2019-04-01,Bicycle Theft,1725
+2019-04-01,Burglary,6245
+2019-04-01,Criminal Damage And Arson,4516
+2019-04-01,Drugs,3393
+2019-04-01,Other Crime,780
+2019-04-01,Other Theft,11649
+2019-04-01,Possession Of Weapons,465
+2019-04-01,Public Order,3987
+2019-04-01,Robbery,3059
+2019-04-01,Shoplifting,3560
+2019-04-01,Theft From The Person,5506
+2019-04-01,Vehicle Crime,9460
+2019-04-01,Violence And Sexual Offences,16336
+2019-05-01,Anti-Social Behaviour,20971
+2019-05-01,Bicycle Theft,2005
+2019-05-01,Burglary,6325
+2019-05-01,Criminal Damage And Arson,4774
+2019-05-01,Drugs,3505
+2019-05-01,Other Crime,855
+2019-05-01,Other Theft,11636
+2019-05-01,Possession Of Weapons,531
+2019-05-01,Public Order,4400
+2019-05-01,Robbery,3023
+2019-05-01,Shoplifting,3935
+2019-05-01,Theft From The Person,4817
+2019-05-01,Vehicle Crime,9453
+2019-05-01,Violence And Sexual Offences,17563
+2019-06-01,Anti-Social Behaviour,22144
+2019-06-01,Bicycle Theft,2069
+2019-06-01,Burglary,6256
+2019-06-01,Criminal Damage And Arson,4523
+2019-06-01,Drugs,3714
+2019-06-01,Other Crime,824
+2019-06-01,Other Theft,11079
+2019-06-01,Possession Of Weapons,476
+2019-06-01,Public Order,4391
+2019-06-01,Robbery,2922
+2019-06-01,Shoplifting,3761
+2019-06-01,Theft From The Person,5225
+2019-06-01,Vehicle Crime,9465
+2019-06-01,Violence And Sexual Offences,17897
+2019-07-01,Anti-Social Behaviour,25794
+2019-07-01,Bicycle Theft,2180
+2019-07-01,Burglary,6121
+2019-07-01,Criminal Damage And Arson,4306
+2019-07-01,Drugs,4171
+2019-07-01,Other Crime,812
+2019-07-01,Other Theft,10480
+2019-07-01,Possession Of Weapons,466
+2019-07-01,Public Order,4842
+2019-07-01,Robbery,3060
+2019-07-01,Shoplifting,3458
+2019-07-01,Theft From The Person,4907
+2019-07-01,Vehicle Crime,8295
+2019-07-01,Violence And Sexual Offences,18682
+2019-08-01,Anti-Social Behaviour,23645
+2019-08-01,Bicycle Theft,1839
+2019-08-01,Burglary,5833
+2019-08-01,Criminal Damage And Arson,4000
+2019-08-01,Drugs,4339
+2019-08-01,Other Crime,739
+2019-08-01,Other Theft,9463
+2019-08-01,Possession Of Weapons,471
+2019-08-01,Public Order,4292
+2019-08-01,Robbery,2679
+2019-08-01,Shoplifting,3487
+2019-08-01,Theft From The Person,4297
+2019-08-01,Vehicle Crime,8260
+2019-08-01,Violence And Sexual Offences,16667
+2019-09-01,Anti-Social Behaviour,19990
+2019-09-01,Bicycle Theft,1719
+2019-09-01,Burglary,6198
+2019-09-01,Criminal Damage And Arson,3990
+2019-09-01,Drugs,3707
+2019-09-01,Other Crime,787
+2019-09-01,Other Theft,8651
+2019-09-01,Possession Of Weapons,437
+2019-09-01,Public Order,4069
+2019-09-01,Robbery,2958
+2019-09-01,Shoplifting,3337
+2019-09-01,Theft From The Person,3805
+2019-09-01,Vehicle Crime,8977
+2019-09-01,Violence And Sexual Offences,16899
+2019-10-01,Anti-Social Behaviour,20538
+2019-10-01,Bicycle Theft,1713
+2019-10-01,Burglary,7089
+2019-10-01,Criminal Damage And Arson,4423
+2019-10-01,Drugs,3671
+2019-10-01,Other Crime,785
+2019-10-01,Other Theft,10773
+2019-10-01,Possession Of Weapons,462
+2019-10-01,Public Order,4290
+2019-10-01,Robbery,3373
+2019-10-01,Shoplifting,3828
+2019-10-01,Theft From The Person,5847
+2019-10-01,Vehicle Crime,10723
+2019-10-01,Violence And Sexual Offences,17223
+2019-11-01,Anti-Social Behaviour,18512
+2019-11-01,Bicycle Theft,1331
+2019-11-01,Burglary,6906
+2019-11-01,Criminal Damage And Arson,4160
+2019-11-01,Drugs,3650
+2019-11-01,Other Crime,777
+2019-11-01,Other Theft,10352
+2019-11-01,Possession Of Weapons,439
+2019-11-01,Public Order,4059
+2019-11-01,Robbery,3482
+2019-11-01,Shoplifting,3789
+2019-11-01,Theft From The Person,5591
+2019-11-01,Vehicle Crime,10152
+2019-11-01,Violence And Sexual Offences,17156
+2019-12-01,Anti-Social Behaviour,16968
+2019-12-01,Bicycle Theft,1028
+2019-12-01,Burglary,6589
+2019-12-01,Criminal Damage And Arson,4266
+2019-12-01,Drugs,3195
+2019-12-01,Other Crime,771
+2019-12-01,Other Theft,10496
+2019-12-01,Possession Of Weapons,439
+2019-12-01,Public Order,3915
+2019-12-01,Robbery,3027
+2019-12-01,Shoplifting,3511
+2019-12-01,Theft From The Person,5787
+2019-12-01,Vehicle Crime,10243
+2019-12-01,Violence And Sexual Offences,16517
+2020-01-01,Anti-Social Behaviour,17617
+2020-01-01,Bicycle Theft,1241
+2020-01-01,Burglary,6860
+2020-01-01,Criminal Damage And Arson,4364
+2020-01-01,Drugs,4292
+2020-01-01,Other Crime,785
+2020-01-01,Other Theft,9951
+2020-01-01,Possession Of Weapons,520
+2020-01-01,Public Order,3954
+2020-01-01,Robbery,3077
+2020-01-01,Shoplifting,3892
+2020-01-01,Theft From The Person,5324
+2020-01-01,Vehicle Crime,11861
+2020-01-01,Violence And Sexual Offences,16717
+2020-02-01,Anti-Social Behaviour,17040
+2020-02-01,Bicycle Theft,1119
+2020-02-01,Burglary,6158
+2020-02-01,Criminal Damage And Arson,4202
+2020-02-01,Drugs,3786
+2020-02-01,Other Crime,689
+2020-02-01,Other Theft,10151
+2020-02-01,Possession Of Weapons,398
+2020-02-01,Public Order,3882
+2020-02-01,Robbery,2967
+2020-02-01,Shoplifting,3890
+2020-02-01,Theft From The Person,5547
+2020-02-01,Vehicle Crime,10276
+2020-02-01,Violence And Sexual Offences,16190
+2020-03-01,Anti-Social Behaviour,23055
+2020-03-01,Bicycle Theft,1123
+2020-03-01,Burglary,5342
+2020-03-01,Criminal Damage And Arson,4272
+2020-03-01,Drugs,3667
+2020-03-01,Other Crime,752
+2020-03-01,Other Theft,7809
+2020-03-01,Possession Of Weapons,442
+2020-03-01,Public Order,3955
+2020-03-01,Robbery,2562
+2020-03-01,Shoplifting,2998
+2020-03-01,Theft From The Person,3972
+2020-03-01,Vehicle Crime,9382
+2020-03-01,Violence And Sexual Offences,16577
+2020-04-01,Anti-Social Behaviour,62748
+2020-04-01,Bicycle Theft,1075
+2020-04-01,Burglary,3655
+2020-04-01,Criminal Damage And Arson,3433
+2020-04-01,Drugs,4884
+2020-04-01,Other Crime,677
+2020-04-01,Other Theft,3906
+2020-04-01,Possession Of Weapons,402
+2020-04-01,Public Order,3282
+2020-04-01,Robbery,1044
+2020-04-01,Shoplifting,1675
+2020-04-01,Theft From The Person,762
+2020-04-01,Vehicle Crime,6239
+2020-04-01,Violence And Sexual Offences,13832
+2020-05-01,Anti-Social Behaviour,58506
+2020-05-01,Bicycle Theft,1780
+2020-05-01,Burglary,3867
+2020-05-01,Criminal Damage And Arson,3866
+2020-05-01,Drugs,6296
+2020-05-01,Other Crime,743
+2020-05-01,Other Theft,4455
+2020-05-01,Possession Of Weapons,465
+2020-05-01,Public Order,3966
+2020-05-01,Robbery,1159
+2020-05-01,Shoplifting,1902
+2020-05-01,Theft From The Person,838
+2020-05-01,Vehicle Crime,7147
+2020-05-01,Violence And Sexual Offences,15900
+2020-06-01,Anti-Social Behaviour,39605
+2020-06-01,Bicycle Theft,2588
+2020-06-01,Burglary,4265
+2020-06-01,Criminal Damage And Arson,4322
+2020-06-01,Drugs,4621
+2020-06-01,Other Crime,784
+2020-06-01,Other Theft,5406
+2020-06-01,Possession Of Weapons,411
+2020-06-01,Public Order,4658
+2020-06-01,Robbery,1567
+2020-06-01,Shoplifting,2380
+2020-06-01,Theft From The Person,1257
+2020-06-01,Vehicle Crime,8010
+2020-06-01,Violence And Sexual Offences,17079
+2020-07-01,Anti-Social Behaviour,35604
+2020-07-01,Bicycle Theft,2877
+2020-07-01,Burglary,4876
+2020-07-01,Criminal Damage And Arson,4631
+2020-07-01,Drugs,4489
+2020-07-01,Other Crime,790
+2020-07-01,Other Theft,7023
+2020-07-01,Possession Of Weapons,405
+2020-07-01,Public Order,5243
+2020-07-01,Robbery,2001
+2020-07-01,Shoplifting,3053
+2020-07-01,Theft From The Person,2219
+2020-07-01,Vehicle Crime,8680
+2020-07-01,Violence And Sexual Offences,18494
+2020-08-01,Anti-Social Behaviour,35872
+2020-08-01,Bicycle Theft,3107
+2020-08-01,Burglary,4955
+2020-08-01,Criminal Damage And Arson,4676
+2020-08-01,Drugs,3543
+2020-08-01,Other Crime,692
+2020-08-01,Other Theft,7734
+2020-08-01,Possession Of Weapons,414
+2020-08-01,Public Order,5198
+2020-08-01,Robbery,2313
+2020-08-01,Shoplifting,3005
+2020-08-01,Theft From The Person,2685
+2020-08-01,Vehicle Crime,8833
+2020-08-01,Violence And Sexual Offences,18685
+2020-09-01,Anti-Social Behaviour,30894
+2020-09-01,Bicycle Theft,3184
+2020-09-01,Burglary,5161
+2020-09-01,Criminal Damage And Arson,4290
+2020-09-01,Drugs,3528
+2020-09-01,Other Crime,836
+2020-09-01,Other Theft,7594
+2020-09-01,Possession Of Weapons,447
+2020-09-01,Public Order,4913
+2020-09-01,Robbery,2427
+2020-09-01,Shoplifting,3047
+2020-09-01,Theft From The Person,2859
+2020-09-01,Vehicle Crime,9675
+2020-09-01,Violence And Sexual Offences,17932
+2020-10-01,Anti-Social Behaviour,31238
+2020-10-01,Bicycle Theft,2710
+2020-10-01,Burglary,5581
+2020-10-01,Criminal Damage And Arson,4226
+2020-10-01,Drugs,4148
+2020-10-01,Other Crime,718
+2020-10-01,Other Theft,7395
+2020-10-01,Possession Of Weapons,444
+2020-10-01,Public Order,4420
+2020-10-01,Robbery,2281
+2020-10-01,Shoplifting,3208
+2020-10-01,Theft From The Person,3463
+2020-10-01,Vehicle Crime,10011
+2020-10-01,Violence And Sexual Offences,17213
+2020-11-01,Anti-Social Behaviour,33917
+2020-11-01,Bicycle Theft,2054
+2020-11-01,Burglary,5158
+2020-11-01,Criminal Damage And Arson,4203
+2020-11-01,Drugs,4442
+2020-11-01,Other Crime,852
+2020-11-01,Other Theft,5780
+2020-11-01,Possession Of Weapons,477
+2020-11-01,Public Order,4072
+2020-11-01,Robbery,2191
+2020-11-01,Shoplifting,2745
+2020-11-01,Theft From The Person,2771
+2020-11-01,Vehicle Crime,9063
+2020-11-01,Violence And Sexual Offences,16710
+2020-12-01,Anti-Social Behaviour,29431
+2020-12-01,Bicycle Theft,1330
+2020-12-01,Burglary,4717
+2020-12-01,Criminal Damage And Arson,4088
+2020-12-01,Drugs,3680
+2020-12-01,Other Crime,692
+2020-12-01,Other Theft,6390
+2020-12-01,Possession Of Weapons,364
+2020-12-01,Public Order,3775
+2020-12-01,Robbery,1908
+2020-12-01,Shoplifting,2683
+2020-12-01,Theft From The Person,3270
+2020-12-01,Vehicle Crime,7649
+2020-12-01,Violence And Sexual Offences,15805
+2021-01-01,Anti-Social Behaviour,33678
+2021-01-01,Bicycle Theft,1064
+2021-01-01,Burglary,4235
+2021-01-01,Criminal Damage And Arson,3634
+2021-01-01,Drugs,3717
+2021-01-01,Other Crime,665
+2021-01-01,Other Theft,4852
+2021-01-01,Possession Of Weapons,321
+2021-01-01,Public Order,3343
+2021-01-01,Robbery,1390
+2021-01-01,Shoplifting,2070
+2021-01-01,Theft From The Person,1718
+2021-01-01,Vehicle Crime,7548
+2021-01-01,Violence And Sexual Offences,14341
+2021-02-01,Anti-Social Behaviour,29205
+2021-02-01,Bicycle Theft,1117
+2021-02-01,Burglary,4005
+2021-02-01,Criminal Damage And Arson,3538
+2021-02-01,Drugs,4056
+2021-02-01,Other Crime,659
+2021-02-01,Other Theft,4619
+2021-02-01,Possession Of Weapons,321
+2021-02-01,Public Order,3237
+2021-02-01,Robbery,1272
+2021-02-01,Shoplifting,2207
+2021-02-01,Theft From The Person,1646
+2021-02-01,Vehicle Crime,7520
+2021-02-01,Violence And Sexual Offences,14255
+2021-03-01,Anti-Social Behaviour,30654
+2021-03-01,Bicycle Theft,1651
+2021-03-01,Burglary,4597
+2021-03-01,Criminal Damage And Arson,4209
+2021-03-01,Drugs,4266
+2021-03-01,Other Crime,781
+2021-03-01,Other Theft,5288
+2021-03-01,Possession Of Weapons,354
+2021-03-01,Public Order,4689
+2021-03-01,Robbery,1565
+2021-03-01,Shoplifting,2444
+2021-03-01,Theft From The Person,2265
+2021-03-01,Vehicle Crime,8207
+2021-03-01,Violence And Sexual Offences,17700
+2021-04-01,Anti-Social Behaviour,27180
+2021-04-01,Bicycle Theft,1870
+2021-04-01,Burglary,4122
+2021-04-01,Criminal Damage And Arson,4292
+2021-04-01,Drugs,3752
+2021-04-01,Other Crime,767
+2021-04-01,Other Theft,6130
+2021-04-01,Possession Of Weapons,319
+2021-04-01,Public Order,4721
+2021-04-01,Robbery,1616
+2021-04-01,Shoplifting,2642
+2021-04-01,Theft From The Person,2663
+2021-04-01,Vehicle Crime,7005
+2021-04-01,Violence And Sexual Offences,17114
+2021-05-01,Anti-Social Behaviour,26193
+2021-05-01,Bicycle Theft,2092
+2021-05-01,Burglary,4139
+2021-05-01,Criminal Damage And Arson,4655
+2021-05-01,Drugs,3438
+2021-05-01,Other Crime,831
+2021-05-01,Other Theft,6846
+2021-05-01,Possession Of Weapons,339
+2021-05-01,Public Order,5271
+2021-05-01,Robbery,1670
+2021-05-01,Shoplifting,2978
+2021-05-01,Theft From The Person,3346
+2021-05-01,Vehicle Crime,7684
+2021-05-01,Violence And Sexual Offences,19433
+2021-06-01,Anti-Social Behaviour,27696
+2021-06-01,Bicycle Theft,2140
+2021-06-01,Burglary,4214
+2021-06-01,Criminal Damage And Arson,4857
+2021-06-01,Drugs,3209
+2021-06-01,Other Crime,716
+2021-06-01,Other Theft,8188
+2021-06-01,Possession Of Weapons,360
+2021-06-01,Public Order,5560
+2021-06-01,Robbery,1794
+2021-06-01,Shoplifting,2957
+2021-06-01,Theft From The Person,3089
+2021-06-01,Vehicle Crime,7919
+2021-06-01,Violence And Sexual Offences,19758
+2021-07-01,Anti-Social Behaviour,26298
+2021-07-01,Bicycle Theft,2261
+2021-07-01,Burglary,4196
+2021-07-01,Criminal Damage And Arson,4653
+2021-07-01,Drugs,3243
+2021-07-01,Other Crime,776
+2021-07-01,Other Theft,8357
+2021-07-01,Possession Of Weapons,381
+2021-07-01,Public Order,5812
+2021-07-01,Robbery,1786
+2021-07-01,Shoplifting,2988
+2021-07-01,Theft From The Person,3392
+2021-07-01,Vehicle Crime,7579
+2021-07-01,Violence And Sexual Offences,20144
+2021-08-01,Anti-Social Behaviour,23399
+2021-08-01,Bicycle Theft,2069
+2021-08-01,Burglary,4279
+2021-08-01,Criminal Damage And Arson,4470
+2021-08-01,Drugs,3162
+2021-08-01,Other Crime,705
+2021-08-01,Other Theft,8193
+2021-08-01,Possession Of Weapons,332
+2021-08-01,Public Order,4710
+2021-08-01,Robbery,1773
+2021-08-01,Shoplifting,3186
+2021-08-01,Theft From The Person,3333
+2021-08-01,Vehicle Crime,8581
+2021-08-01,Violence And Sexual Offences,17653
+2021-09-01,Anti-Social Behaviour,21984
+2021-09-01,Bicycle Theft,2266
+2021-09-01,Burglary,4282
+2021-09-01,Criminal Damage And Arson,4444
+2021-09-01,Drugs,2948
+2021-09-01,Other Crime,748
+2021-09-01,Other Theft,8972
+2021-09-01,Possession Of Weapons,361
+2021-09-01,Public Order,5002
+2021-09-01,Robbery,2051
+2021-09-01,Shoplifting,2718
+2021-09-01,Theft From The Person,3621
+2021-09-01,Vehicle Crime,8888
+2021-09-01,Violence And Sexual Offences,19189
+2021-10-01,Anti-Social Behaviour,21082
+2021-10-01,Bicycle Theft,2057
+2021-10-01,Burglary,4649
+2021-10-01,Criminal Damage And Arson,4555
+2021-10-01,Drugs,3603
+2021-10-01,Other Crime,791
+2021-10-01,Other Theft,9419
+2021-10-01,Possession Of Weapons,395
+2021-10-01,Public Order,5118
+2021-10-01,Robbery,2123
+2021-10-01,Shoplifting,3042
+2021-10-01,Theft From The Person,4810
+2021-10-01,Vehicle Crime,9029
+2021-10-01,Violence And Sexual Offences,19760
+2021-11-01,Anti-Social Behaviour,18060
+2021-11-01,Bicycle Theft,1756
+2021-11-01,Burglary,4794
+2021-11-01,Criminal Damage And Arson,4471
+2021-11-01,Drugs,3547
+2021-11-01,Other Crime,761
+2021-11-01,Other Theft,9753
+2021-11-01,Possession Of Weapons,408
+2021-11-01,Public Order,4775
+2021-11-01,Robbery,2149
+2021-11-01,Shoplifting,2909
+2021-11-01,Theft From The Person,5002
+2021-11-01,Vehicle Crime,9207
+2021-11-01,Violence And Sexual Offences,19103
+2021-12-01,Anti-Social Behaviour,16817
+2021-12-01,Bicycle Theft,1106
+2021-12-01,Burglary,4542
+2021-12-01,Criminal Damage And Arson,4180
+2021-12-01,Drugs,3182
+2021-12-01,Other Crime,692
+2021-12-01,Other Theft,9008
+2021-12-01,Possession Of Weapons,387
+2021-12-01,Public Order,4168
+2021-12-01,Robbery,1871
+2021-12-01,Shoplifting,2643
+2021-12-01,Theft From The Person,4747
+2021-12-01,Vehicle Crime,8470
+2021-12-01,Violence And Sexual Offences,17755
+2022-01-01,Anti-Social Behaviour,17312
+2022-01-01,Bicycle Theft,1241
+2022-01-01,Burglary,4701
+2022-01-01,Criminal Damage And Arson,4295
+2022-01-01,Drugs,4016
+2022-01-01,Other Crime,749
+2022-01-01,Other Theft,8618
+2022-01-01,Possession Of Weapons,427
+2022-01-01,Public Order,4042
+2022-01-01,Robbery,1892
+2022-01-01,Shoplifting,2824
+2022-01-01,Theft From The Person,4344
+2022-01-01,Vehicle Crime,8849
+2022-01-01,Violence And Sexual Offences,17929
+2022-02-01,Anti-Social Behaviour,15649
+2022-02-01,Bicycle Theft,1070
+2022-02-01,Burglary,4176
+2022-02-01,Criminal Damage And Arson,3795
+2022-02-01,Drugs,3481
+2022-02-01,Other Crime,735
+2022-02-01,Other Theft,8668
+2022-02-01,Possession Of Weapons,338
+2022-02-01,Public Order,3824
+2022-02-01,Robbery,1777
+2022-02-01,Shoplifting,2767
+2022-02-01,Theft From The Person,4202
+2022-02-01,Vehicle Crime,7895
+2022-02-01,Violence And Sexual Offences,17145
+2022-03-01,Anti-Social Behaviour,35230
+2022-03-01,Bicycle Theft,1403
+2022-03-01,Burglary,4414
+2022-03-01,Criminal Damage And Arson,4365
+2022-03-01,Drugs,3859
+2022-03-01,Other Crime,904
+2022-03-01,Other Theft,9800
+2022-03-01,Possession Of Weapons,400
+2022-03-01,Public Order,4807
+2022-03-01,Robbery,1967
+2022-03-01,Shoplifting,3121
+2022-03-01,Theft From The Person,5644
+2022-03-01,Vehicle Crime,8936
+2022-03-01,Violence And Sexual Offences,19530
+2022-04-01,Anti-Social Behaviour,18348
+2022-04-01,Bicycle Theft,1666
+2022-04-01,Burglary,3887
+2022-04-01,Criminal Damage And Arson,4507
+2022-04-01,Drugs,3006
+2022-04-01,Other Crime,732
+2022-04-01,Other Theft,9257
+2022-04-01,Possession Of Weapons,388
+2022-04-01,Public Order,4368
+2022-04-01,Robbery,1786
+2022-04-01,Shoplifting,3134
+2022-04-01,Theft From The Person,4783
+2022-04-01,Vehicle Crime,8453
+2022-04-01,Violence And Sexual Offences,17888
+2022-05-01,Anti-Social Behaviour,20831
+2022-05-01,Bicycle Theft,1833
+2022-05-01,Burglary,4405
+2022-05-01,Criminal Damage And Arson,4601
+2022-05-01,Drugs,3599
+2022-05-01,Other Crime,866
+2022-05-01,Other Theft,10002
+2022-05-01,Possession Of Weapons,378
+2022-05-01,Public Order,5147
+2022-05-01,Robbery,2289
+2022-05-01,Shoplifting,3436
+2022-05-01,Theft From The Person,4988
+2022-05-01,Vehicle Crime,8618
+2022-05-01,Violence And Sexual Offences,20289
+2022-06-01,Anti-Social Behaviour,20371
+2022-06-01,Bicycle Theft,1861
+2022-06-01,Burglary,4054
+2022-06-01,Criminal Damage And Arson,4461
+2022-06-01,Drugs,3303
+2022-06-01,Other Crime,801
+2022-06-01,Other Theft,10137
+2022-06-01,Possession Of Weapons,393
+2022-06-01,Public Order,5071
+2022-06-01,Robbery,2196
+2022-06-01,Shoplifting,3182
+2022-06-01,Theft From The Person,4856
+2022-06-01,Vehicle Crime,8802
+2022-06-01,Violence And Sexual Offences,19116
+2022-07-01,Anti-Social Behaviour,21780
+2022-07-01,Bicycle Theft,1793
+2022-07-01,Burglary,3665
+2022-07-01,Criminal Damage And Arson,4635
+2022-07-01,Drugs,3457
+2022-07-01,Other Crime,834
+2022-07-01,Other Theft,10878
+2022-07-01,Possession Of Weapons,345
+2022-07-01,Public Order,5195
+2022-07-01,Robbery,2211
+2022-07-01,Shoplifting,2980
+2022-07-01,Theft From The Person,5255
+2022-07-01,Vehicle Crime,8679
+2022-07-01,Violence And Sexual Offences,20069
+2022-08-01,Anti-Social Behaviour,21857
+2022-08-01,Bicycle Theft,1866
+2022-08-01,Burglary,4074
+2022-08-01,Criminal Damage And Arson,4544
+2022-08-01,Drugs,3409
+2022-08-01,Other Crime,876
+2022-08-01,Other Theft,10519
+2022-08-01,Possession Of Weapons,386
+2022-08-01,Public Order,4848
+2022-08-01,Robbery,2107
+2022-08-01,Shoplifting,3170
+2022-08-01,Theft From The Person,4034
+2022-08-01,Vehicle Crime,8934
+2022-08-01,Violence And Sexual Offences,18896
+2022-09-01,Anti-Social Behaviour,17483
+2022-09-01,Bicycle Theft,1649
+2022-09-01,Burglary,4334
+2022-09-01,Criminal Damage And Arson,4144
+2022-09-01,Drugs,2854
+2022-09-01,Other Crime,758
+2022-09-01,Other Theft,9746
+2022-09-01,Possession Of Weapons,345
+2022-09-01,Public Order,4296
+2022-09-01,Robbery,1979
+2022-09-01,Shoplifting,3123
+2022-09-01,Theft From The Person,3669
+2022-09-01,Vehicle Crime,9103
+2022-09-01,Violence And Sexual Offences,17862
+2022-10-01,Anti-Social Behaviour,36625
+2022-10-01,Bicycle Theft,1753
+2022-10-01,Burglary,4518
+2022-10-01,Criminal Damage And Arson,4515
+2022-10-01,Drugs,3131
+2022-10-01,Other Crime,820
+2022-10-01,Other Theft,11084
+2022-10-01,Possession Of Weapons,371
+2022-10-01,Public Order,4627
+2022-10-01,Robbery,2436
+2022-10-01,Shoplifting,3356
+2022-10-01,Theft From The Person,5640
+2022-10-01,Vehicle Crime,9676
+2022-10-01,Violence And Sexual Offences,18477
+2022-11-01,Anti-Social Behaviour,15434
+2022-11-01,Bicycle Theft,1468
+2022-11-01,Burglary,4645
+2022-11-01,Criminal Damage And Arson,4278
+2022-11-01,Drugs,3181
+2022-11-01,Other Crime,773
+2022-11-01,Other Theft,11698
+2022-11-01,Possession Of Weapons,334
+2022-11-01,Public Order,4461
+2022-11-01,Robbery,2315
+2022-11-01,Shoplifting,3148
+2022-11-01,Theft From The Person,6043
+2022-11-01,Vehicle Crime,9504
+2022-11-01,Violence And Sexual Offences,18185
+2022-12-01,Anti-Social Behaviour,14633
+2022-12-01,Bicycle Theft,825
+2022-12-01,Burglary,4301
+2022-12-01,Criminal Damage And Arson,3973
+2022-12-01,Drugs,2616
+2022-12-01,Other Crime,680
+2022-12-01,Other Theft,11642
+2022-12-01,Possession Of Weapons,268
+2022-12-01,Public Order,3766
+2022-12-01,Robbery,2073
+2022-12-01,Shoplifting,3031
+2022-12-01,Theft From The Person,6064
+2022-12-01,Vehicle Crime,7932
+2022-12-01,Violence And Sexual Offences,16454
+2023-01-01,Anti-Social Behaviour,14872
+2023-01-01,Bicycle Theft,974
+2023-01-01,Burglary,4839
+2023-01-01,Criminal Damage And Arson,4220
+2023-01-01,Drugs,3420
+2023-01-01,Other Crime,812
+2023-01-01,Other Theft,10632
+2023-01-01,Possession Of Weapons,393
+2023-01-01,Public Order,4012
+2023-01-01,Robbery,2357
+2023-01-01,Shoplifting,3938
+2023-01-01,Theft From The Person,5565
+2023-01-01,Vehicle Crime,8996
+2023-01-01,Violence And Sexual Offences,17421
+2023-02-01,Anti-Social Behaviour,14603
+2023-02-01,Bicycle Theft,1070
+2023-02-01,Burglary,4306
+2023-02-01,Criminal Damage And Arson,4028
+2023-02-01,Drugs,2840
+2023-02-01,Other Crime,758
+2023-02-01,Other Theft,10131
+2023-02-01,Possession Of Weapons,338
+2023-02-01,Public Order,3971
+2023-02-01,Robbery,2382
+2023-02-01,Shoplifting,3727
+2023-02-01,Theft From The Person,5589
+2023-02-01,Vehicle Crime,8073
+2023-02-01,Violence And Sexual Offences,16684
+2023-03-01,Anti-Social Behaviour,16422
+2023-03-01,Bicycle Theft,1134
+2023-03-01,Burglary,4444
+2023-03-01,Criminal Damage And Arson,4379
+2023-03-01,Drugs,2943
+2023-03-01,Other Crime,853
+2023-03-01,Other Theft,11025
+2023-03-01,Possession Of Weapons,404
+2023-03-01,Public Order,4488
+2023-03-01,Robbery,2337
+2023-03-01,Shoplifting,4296
+2023-03-01,Theft From The Person,5634
+2023-03-01,Vehicle Crime,8572
+2023-03-01,Violence And Sexual Offences,18094
+2023-04-01,Anti-Social Behaviour,17365
+2023-04-01,Bicycle Theft,1143
+2023-04-01,Burglary,3811
+2023-04-01,Criminal Damage And Arson,4313
+2023-04-01,Drugs,2642
+2023-04-01,Other Crime,715
+2023-04-01,Other Theft,9821
+2023-04-01,Possession Of Weapons,368
+2023-04-01,Public Order,4201
+2023-04-01,Robbery,2176
+2023-04-01,Shoplifting,4181
+2023-04-01,Theft From The Person,5461
+2023-04-01,Vehicle Crime,7715
+2023-04-01,Violence And Sexual Offences,17106
+2023-05-01,Anti-Social Behaviour,20240
+2023-05-01,Bicycle Theft,1447
+2023-05-01,Burglary,4142
+2023-05-01,Criminal Damage And Arson,4746
+2023-05-01,Drugs,2863
+2023-05-01,Other Crime,745
+2023-05-01,Other Theft,10732
+2023-05-01,Possession Of Weapons,366
+2023-05-01,Public Order,4747
+2023-05-01,Robbery,2433
+2023-05-01,Shoplifting,4290
+2023-05-01,Theft From The Person,5384
+2023-05-01,Vehicle Crime,8290
+2023-05-01,Violence And Sexual Offences,19605
+2023-06-01,Anti-Social Behaviour,19997
+2023-06-01,Bicycle Theft,1518
+2023-06-01,Burglary,3926
+2023-06-01,Criminal Damage And Arson,4565
+2023-06-01,Drugs,2867
+2023-06-01,Other Crime,777
+2023-06-01,Other Theft,10583
+2023-06-01,Possession Of Weapons,400
+2023-06-01,Public Order,4865
+2023-06-01,Robbery,2351
+2023-06-01,Shoplifting,4225
+2023-06-01,Theft From The Person,4752
+2023-06-01,Vehicle Crime,7662
+2023-06-01,Violence And Sexual Offences,20322
+2023-07-01,Anti-Social Behaviour,19776
+2023-07-01,Bicycle Theft,1472
+2023-07-01,Burglary,4064
+2023-07-01,Criminal Damage And Arson,4646
+2023-07-01,Drugs,2922
+2023-07-01,Other Crime,748
+2023-07-01,Other Theft,10372
+2023-07-01,Possession Of Weapons,424
+2023-07-01,Public Order,4715
+2023-07-01,Robbery,2326
+2023-07-01,Shoplifting,4407
+2023-07-01,Theft From The Person,4744
+2023-07-01,Vehicle Crime,7764
+2023-07-01,Violence And Sexual Offences,20099
+2023-08-01,Anti-Social Behaviour,18770
+2023-08-01,Bicycle Theft,1364
+2023-08-01,Burglary,4230
+2023-08-01,Criminal Damage And Arson,4503
+2023-08-01,Drugs,2994
+2023-08-01,Other Crime,716
+2023-08-01,Other Theft,9555
+2023-08-01,Possession Of Weapons,369
+2023-08-01,Public Order,4302
+2023-08-01,Robbery,2110
+2023-08-01,Shoplifting,4483
+2023-08-01,Theft From The Person,4449
+2023-08-01,Vehicle Crime,7818
+2023-08-01,Violence And Sexual Offences,18812
+2023-09-01,Anti-Social Behaviour,19221
+2023-09-01,Bicycle Theft,1521
+2023-09-01,Burglary,4142
+2023-09-01,Criminal Damage And Arson,4643
+2023-09-01,Drugs,2631
+2023-09-01,Other Crime,787
+2023-09-01,Other Theft,9540
+2023-09-01,Possession Of Weapons,338
+2023-09-01,Public Order,4599
+2023-09-01,Robbery,2299
+2023-09-01,Shoplifting,4057
+2023-09-01,Theft From The Person,4411
+2023-09-01,Vehicle Crime,8308
+2023-09-01,Violence And Sexual Offences,19552
+2023-10-01,Anti-Social Behaviour,18159
+2023-10-01,Bicycle Theft,1394
+2023-10-01,Burglary,4041
+2023-10-01,Criminal Damage And Arson,4301
+2023-10-01,Drugs,2283
+2023-10-01,Other Crime,751
+2023-10-01,Other Theft,10055
+2023-10-01,Possession Of Weapons,307
+2023-10-01,Public Order,4412
+2023-10-01,Robbery,2187
+2023-10-01,Shoplifting,4019
+2023-10-01,Theft From The Person,5225
+2023-10-01,Vehicle Crime,8214
+2023-10-01,Violence And Sexual Offences,18359
+2023-11-01,Anti-Social Behaviour,16086
+2023-11-01,Bicycle Theft,1081
+2023-11-01,Burglary,4157
+2023-11-01,Criminal Damage And Arson,4341
+2023-11-01,Drugs,2338
+2023-11-01,Other Crime,704
+2023-11-01,Other Theft,10648
+2023-11-01,Possession Of Weapons,295
+2023-11-01,Public Order,4362
+2023-11-01,Robbery,2595
+2023-11-01,Shoplifting,4038
+2023-11-01,Theft From The Person,6847
+2023-11-01,Vehicle Crime,8339
+2023-11-01,Violence And Sexual Offences,18411
+2023-12-01,Anti-Social Behaviour,14745
+2023-12-01,Bicycle Theft,838
+2023-12-01,Burglary,4444
+2023-12-01,Criminal Damage And Arson,4345
+2023-12-01,Drugs,2139
+2023-12-01,Other Crime,634
+2023-12-01,Other Theft,9861
+2023-12-01,Possession Of Weapons,288
+2023-12-01,Public Order,4033
+2023-12-01,Robbery,2573
+2023-12-01,Shoplifting,3889
+2023-12-01,Theft From The Person,6555
+2023-12-01,Vehicle Crime,7662
+2023-12-01,Violence And Sexual Offences,18743
+2024-01-01,Anti-Social Behaviour,14930
+2024-01-01,Bicycle Theft,896
+2024-01-01,Burglary,4510
+2024-01-01,Criminal Damage And Arson,4479
+2024-01-01,Drugs,2405
+2024-01-01,Other Crime,727
+2024-01-01,Other Theft,9036
+2024-01-01,Possession Of Weapons,336
+2024-01-01,Public Order,3662
+2024-01-01,Robbery,2488
+2024-01-01,Shoplifting,4224
+2024-01-01,Theft From The Person,5731
+2024-01-01,Vehicle Crime,8248
+2024-01-01,Violence And Sexual Offences,18015
+2024-02-01,Anti-Social Behaviour,15271
+2024-02-01,Bicycle Theft,1018
+2024-02-01,Burglary,3997
+2024-02-01,Criminal Damage And Arson,4240
+2024-02-01,Drugs,2479
+2024-02-01,Other Crime,635
+2024-02-01,Other Theft,9482
+2024-02-01,Possession Of Weapons,335
+2024-02-01,Public Order,3958
+2024-02-01,Robbery,2282
+2024-02-01,Shoplifting,4539
+2024-02-01,Theft From The Person,6645
+2024-02-01,Vehicle Crime,7440
+2024-02-01,Violence And Sexual Offences,17871
+2024-03-01,Anti-Social Behaviour,16278
+2024-03-01,Bicycle Theft,1126
+2024-03-01,Burglary,4249
+2024-03-01,Criminal Damage And Arson,4204
+2024-03-01,Drugs,2392
+2024-03-01,Other Crime,706
+2024-03-01,Other Theft,8084
+2024-03-01,Possession Of Weapons,381
+2024-03-01,Public Order,4135
+2024-03-01,Robbery,2525
+2024-03-01,Shoplifting,5157
+2024-03-01,Theft From The Person,7816
+2024-03-01,Vehicle Crime,7803
+2024-03-01,Violence And Sexual Offences,18557
+2024-04-01,Anti-Social Behaviour,16451
+2024-04-01,Bicycle Theft,1138
+2024-04-01,Burglary,3852
+2024-04-01,Criminal Damage And Arson,4199
+2024-04-01,Drugs,2329
+2024-04-01,Other Crime,793
+2024-04-01,Other Theft,7856
+2024-04-01,Possession Of Weapons,316
+2024-04-01,Public Order,4001
+2024-04-01,Robbery,2304
+2024-04-01,Shoplifting,5946
+2024-04-01,Theft From The Person,7398
+2024-04-01,Vehicle Crime,7829
+2024-04-01,Violence And Sexual Offences,17796
+2024-05-01,Anti-Social Behaviour,20026
+2024-05-01,Bicycle Theft,1295
+2024-05-01,Burglary,3626
+2024-05-01,Criminal Damage And Arson,4281
+2024-05-01,Drugs,2575
+2024-05-01,Other Crime,872
+2024-05-01,Other Theft,8122
+2024-05-01,Possession Of Weapons,360
+2024-05-01,Public Order,4598
+2024-05-01,Robbery,2673
+2024-05-01,Shoplifting,6062
+2024-05-01,Theft From The Person,6436
+2024-05-01,Vehicle Crime,7823
+2024-05-01,Violence And Sexual Offences,20116
+2024-06-01,Anti-Social Behaviour,19893
+2024-06-01,Bicycle Theft,1325
+2024-06-01,Burglary,3559
+2024-06-01,Criminal Damage And Arson,4350
+2024-06-01,Drugs,2520
+2024-06-01,Other Crime,869
+2024-06-01,Other Theft,8745
+2024-06-01,Possession Of Weapons,324
+2024-06-01,Public Order,4676
+2024-06-01,Robbery,2462
+2024-06-01,Shoplifting,5888
+2024-06-01,Theft From The Person,6570
+2024-06-01,Vehicle Crime,7299
+2024-06-01,Violence And Sexual Offences,19941
+2024-07-01,Anti-Social Behaviour,20427
+2024-07-01,Bicycle Theft,1337
+2024-07-01,Burglary,3802
+2024-07-01,Criminal Damage And Arson,4851
+2024-07-01,Drugs,2655
+2024-07-01,Other Crime,898
+2024-07-01,Other Theft,8541
+2024-07-01,Possession Of Weapons,331
+2024-07-01,Public Order,4993
+2024-07-01,Robbery,2388
+2024-07-01,Shoplifting,6853
+2024-07-01,Theft From The Person,6506
+2024-07-01,Vehicle Crime,7403
+2024-07-01,Violence And Sexual Offences,20640
+2024-08-01,Anti-Social Behaviour,20119
+2024-08-01,Bicycle Theft,1364
+2024-08-01,Burglary,3827
+2024-08-01,Criminal Damage And Arson,4730
+2024-08-01,Drugs,2848
+2024-08-01,Other Crime,904
+2024-08-01,Other Theft,7861
+2024-08-01,Possession Of Weapons,372
+2024-08-01,Public Order,4884
+2024-08-01,Robbery,2403
+2024-08-01,Shoplifting,6943
+2024-08-01,Theft From The Person,6288
+2024-08-01,Vehicle Crime,7262
+2024-08-01,Violence And Sexual Offences,19445
+2024-09-01,Anti-Social Behaviour,17660
+2024-09-01,Bicycle Theft,1380
+2024-09-01,Burglary,3700
+2024-09-01,Criminal Damage And Arson,4249
+2024-09-01,Drugs,3434
+2024-09-01,Other Crime,1019
+2024-09-01,Other Theft,7683
+2024-09-01,Possession Of Weapons,392
+2024-09-01,Public Order,4431
+2024-09-01,Robbery,2434
+2024-09-01,Shoplifting,6637
+2024-09-01,Theft From The Person,6143
+2024-09-01,Vehicle Crime,7076
+2024-09-01,Violence And Sexual Offences,19462
+2024-10-01,Anti-Social Behaviour,18433
+2024-10-01,Bicycle Theft,1345
+2024-10-01,Burglary,4180
+2024-10-01,Criminal Damage And Arson,4279
+2024-10-01,Drugs,3698
+2024-10-01,Other Crime,1103
+2024-10-01,Other Theft,8387
+2024-10-01,Possession Of Weapons,372
+2024-10-01,Public Order,4630
+2024-10-01,Robbery,2759
+2024-10-01,Shoplifting,6916
+2024-10-01,Theft From The Person,7804
+2024-10-01,Vehicle Crime,7658
+2024-10-01,Violence And Sexual Offences,20078
+2024-11-01,Anti-Social Behaviour,16540
+2024-11-01,Bicycle Theft,1142
+2024-11-01,Burglary,4175
+2024-11-01,Criminal Damage And Arson,4247
+2024-11-01,Drugs,3786
+2024-11-01,Other Crime,1062
+2024-11-01,Other Theft,8302
+2024-11-01,Possession Of Weapons,348
+2024-11-01,Public Order,4327
+2024-11-01,Robbery,2562
+2024-11-01,Shoplifting,6657
+2024-11-01,Theft From The Person,8711
+2024-11-01,Vehicle Crime,7266
+2024-11-01,Violence And Sexual Offences,19541
+2024-12-01,Anti-Social Behaviour,14264
+2024-12-01,Bicycle Theft,783
+2024-12-01,Burglary,4299
+2024-12-01,Criminal Damage And Arson,3897
+2024-12-01,Drugs,3578
+2024-12-01,Other Crime,938
+2024-12-01,Other Theft,8119
+2024-12-01,Possession Of Weapons,299
+2024-12-01,Public Order,3862
+2024-12-01,Robbery,2460
+2024-12-01,Shoplifting,5549
+2024-12-01,Theft From The Person,7957
+2024-12-01,Vehicle Crime,6588
+2024-12-01,Violence And Sexual Offences,19275
+2025-01-01,Anti-Social Behaviour,14586
+2025-01-01,Bicycle Theft,755
+2025-01-01,Burglary,4057
+2025-01-01,Criminal Damage And Arson,3925
+2025-01-01,Drugs,3782
+2025-01-01,Other Crime,1055
+2025-01-01,Other Theft,7219
+2025-01-01,Possession Of Weapons,306
+2025-01-01,Public Order,3829
+2025-01-01,Robbery,2215
+2025-01-01,Shoplifting,5762
+2025-01-01,Theft From The Person,6635
+2025-01-01,Vehicle Crime,6776
+2025-01-01,Violence And Sexual Offences,18148
+2025-02-01,Anti-Social Behaviour,13712
+2025-02-01,Bicycle Theft,737
+2025-02-01,Burglary,3437
+2025-02-01,Criminal Damage And Arson,3694
+2025-02-01,Drugs,3358
+2025-02-01,Other Crime,918
+2025-02-01,Other Theft,6755
+2025-02-01,Possession Of Weapons,307
+2025-02-01,Public Order,3392
+2025-02-01,Robbery,2107
+2025-02-01,Shoplifting,5657
+2025-02-01,Theft From The Person,6546
+2025-02-01,Vehicle Crime,6515
+2025-02-01,Violence And Sexual Offences,17312
+2025-03-01,Anti-Social Behaviour,17101
+2025-03-01,Bicycle Theft,898
+2025-03-01,Burglary,3619
+2025-03-01,Criminal Damage And Arson,4179
+2025-03-01,Drugs,3629
+2025-03-01,Other Crime,1085
+2025-03-01,Other Theft,6835
+2025-03-01,Possession Of Weapons,387
+2025-03-01,Public Order,4107
+2025-03-01,Robbery,2265
+2025-03-01,Shoplifting,5848
+2025-03-01,Theft From The Person,6906
+2025-03-01,Vehicle Crime,6504
+2025-03-01,Violence And Sexual Offences,20107

@@ -1,0 +1,208 @@
+
+Dim Time 
+
+
+USE mydatabase;
+
+
+DROP TABLE IF EXISTS dim_time;
+CREATE TABLE dim_time (
+  time_id    DATE,     -- first day of month
+  month      INT,
+  quarter    INT,
+  year       INT,
+  month_name STRING
+)
+STORED AS ORC;
+
+-- Populate months seen in the data between 2015-03 and 2025-03
+INSERT OVERWRITE TABLE dim_time
+SELECT
+  m.first_day                                  AS time_id,
+  month(m.first_day)                           AS month,
+  quarter(m.first_day)                         AS quarter,
+  year(m.first_day)                            AS year,
+  date_format(m.first_day,'MMMM')              AS month_name
+FROM (
+  SELECT  to_date(date_format(time_id,'yyyy-MM-01')) AS first_day
+  FROM    crime_data
+  WHERE   time_id BETWEEN to_date('2015-03-01') AND to_date('2025-03-31')
+  GROUP BY to_date(date_format(time_id,'yyyy-MM-01'))
+) m
+ORDER BY year, month;
+
+-- Quick check (you should see 121 rows, min=2015-03-01, max=2025-03-01)
+SELECT COUNT(*) cnt, MIN(time_id) min_id, MAX(time_id) max_id FROM dim_time;
+
+
+
+
+
+
+
+
+
+
+
+Dim Crime 
+
+DROP TABLE IF EXISTS dim_crime_type;
+CREATE TABLE dim_crime_type (
+  crime_type_id INT,
+  crime_type    STRING
+)
+STORED AS ORC;
+
+-- Refill
+INSERT OVERWRITE TABLE dim_crime_type
+SELECT
+  DENSE_RANK() OVER (ORDER BY crime_type_clean) AS crime_type_id,
+  crime_type_clean AS crime_type
+FROM (
+  SELECT DISTINCT NULLIF(TRIM(crime_type), '') AS crime_type_clean
+  FROM crime_data
+  WHERE crime_type IS NOT NULL AND TRIM(crime_type) <> ''
+) t
+ORDER BY crime_type_id;
+
+
+
+
+
+
+
+
+Dim Deprvation
+
+DROP TABLE IF EXISTS dim_deprivation;
+CREATE TABLE dim_deprivation (
+  deprivation_id    INT,
+  deprivation_level STRING,
+  imd_min           DOUBLE,   -- inclusive
+  imd_max           DOUBLE    -- exclusive (NULL = +inf)
+)
+STORED AS ORC;
+
+-- Use TRUNCATE + INSERT INTO (avoids INSERT OVERWRITE + UNION ALL issues)
+TRUNCATE TABLE dim_deprivation;
+
+WITH bounds AS (
+  SELECT
+    percentile_approx(CAST(imd_score AS DOUBLE), 0.20) AS p20,
+    percentile_approx(CAST(imd_score AS DOUBLE), 0.40) AS p40,
+    percentile_approx(CAST(imd_score AS DOUBLE), 0.60) AS p60,
+    percentile_approx(CAST(imd_score AS DOUBLE), 0.80) AS p80
+  FROM crime_data
+  WHERE imd_score IS NOT NULL
+)
+INSERT INTO TABLE dim_deprivation
+SELECT 1, 'Very Low',  NULL, p20 FROM bounds UNION ALL
+SELECT 2, 'Low',       p20,  p40 FROM bounds UNION ALL
+SELECT 3, 'Medium',    p40,  p60 FROM bounds UNION ALL
+SELECT 4, 'High',      p60,  p80 FROM bounds UNION ALL
+SELECT 5, 'Very High', p80,  NULL FROM bounds;
+
+
+
+
+
+
+Dim location
+
+
+DROP TABLE IF EXISTS dim_location;
+CREATE TABLE dim_location (
+  lsoa_code STRING,
+  lsoa_name STRING,
+  longitude DOUBLE,
+  latitude  DOUBLE
+)
+STORED AS ORC;
+
+INSERT OVERWRITE TABLE dim_location
+SELECT
+  lsoa_code,
+  MAX(lsoa_name) AS lsoa_name,
+  CAST(AVG(CAST(longitude AS DOUBLE)) AS DOUBLE) AS longitude,
+  CAST(AVG(CAST(latitude  AS DOUBLE)) AS DOUBLE) AS latitude
+FROM (
+  SELECT
+    UPPER(TRIM(lsoa_code))      AS lsoa_code,
+    INITCAP(TRIM(lsoa_name))    AS lsoa_name,
+    CAST(longitude AS DOUBLE)   AS longitude,
+    CAST(latitude  AS DOUBLE)   AS latitude
+  FROM crime_data
+  WHERE lsoa_code IS NOT NULL AND TRIM(lsoa_code) <> ''
+    AND LOWER(TRIM(lsoa_code)) <> 'lsoa_code'
+    AND UPPER(TRIM(lsoa_code)) RLIKE '^[EWSN][0-9]{8}$'
+) s
+GROUP BY lsoa_code
+ORDER BY lsoa_code;
+
+
+
+
+
+
+
+
+
+Dim police force
+
+
+
+DROP TABLE IF EXISTS dim_police_force;
+CREATE TABLE dim_police_force (
+  police_force_id   INT,
+  police_force_name STRING
+)
+STORED AS ORC;
+
+INSERT OVERWRITE TABLE dim_police_force
+SELECT
+  DENSE_RANK() OVER (ORDER BY pf) AS police_force_id,
+  pf AS police_force_name
+FROM (
+  SELECT DISTINCT NULLIF(TRIM(police_force_name), '') AS pf
+  FROM crime_data
+  WHERE police_force_name IS NOT NULL
+    AND TRIM(police_force_name) <> ''
+    AND LOWER(TRIM(police_force_name)) <> 'police_force_name'
+) t
+ORDER BY police_force_id;
+
+
+
+
+Dim Outcome
+
+
+
+
+DROP TABLE IF EXISTS dim_outcome_type;
+CREATE TABLE dim_outcome_type (
+  outcome_id   INT,
+  last_outcome STRING,
+  case_status  STRING
+)
+STORED AS ORC;
+
+INSERT OVERWRITE TABLE dim_outcome_type
+SELECT
+  DENSE_RANK() OVER (ORDER BY last_outcome_clean, case_status_clean) AS outcome_id,
+  last_outcome_clean AS last_outcome,
+  case_status_clean  AS case_status
+FROM (
+  SELECT DISTINCT
+    NULLIF(TRIM(last_outcome), '') AS last_outcome_clean,
+    NULLIF(TRIM(case_status),  '') AS case_status_clean
+  FROM crime_data
+  WHERE (last_outcome IS NOT NULL AND TRIM(last_outcome) <> '')
+     OR (case_status  IS NOT NULL AND TRIM(case_status)  <> '')
+) s
+ORDER BY outcome_id;
+
+
+
+
+

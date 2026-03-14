@@ -1,0 +1,1016 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.26.0109.0333                               -->
+<workbook original-version='18.1' source-build='2025.3.2 (20253.26.0109.0333)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='fact_table_4+' inline='true' name='federated.0yvr9xp0e1geue173ha0m1bmecde' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='fact_table_4' name='textscan.0vrldej0uvsuom18qzz170ijjv3k'>
+            <connection class='textscan' directory='C:/Users/HP/Documents/London Crimes/Dims and Facts csv/Dims and Facts csv' filename='fact_table_4.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='textscan.0vrldej0uvsuom18qzz170ijjv3k' name='fact_table_4.csv' table='[fact_table_4#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+              <column datatype='date' name='time_id' ordinal='0' />
+              <column datatype='string' name='lsoa_code' ordinal='1' />
+              <column datatype='string' name='deprivation_level' ordinal='2' />
+              <column datatype='integer' name='crime_count' ordinal='3' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0vrldej0uvsuom18qzz170ijjv3k' name='dim_deprivation.csv' table='[dim_deprivation#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+              <column datatype='integer' name='deprivation_id' ordinal='0' />
+              <column datatype='string' name='deprivation_level' ordinal='1' />
+              <column datatype='string' name='imd_min' ordinal='2' />
+              <column datatype='string' name='imd_max' ordinal='3' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0vrldej0uvsuom18qzz170ijjv3k' name='dim_location.csv' table='[dim_location#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+              <column datatype='string' name='lsoa_code' ordinal='0' />
+              <column datatype='string' name='lsoa_name' ordinal='1' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0vrldej0uvsuom18qzz170ijjv3k' name='dim_time.csv' table='[dim_time#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+              <column datatype='date' name='time_id' ordinal='0' />
+              <column datatype='integer' name='year' ordinal='1' />
+              <column datatype='integer' name='quarter' ordinal='2' />
+              <column datatype='integer' name='month' ordinal='3' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[crime_count]' value='[fact_table_4.csv].[crime_count]' />
+          <map key='[deprivation_id]' value='[dim_deprivation.csv].[deprivation_id]' />
+          <map key='[deprivation_level (dim_deprivation.csv)]' value='[dim_deprivation.csv].[deprivation_level]' />
+          <map key='[deprivation_level]' value='[fact_table_4.csv].[deprivation_level]' />
+          <map key='[imd_max]' value='[dim_deprivation.csv].[imd_max]' />
+          <map key='[imd_min]' value='[dim_deprivation.csv].[imd_min]' />
+          <map key='[lsoa_code (dim_location.csv)]' value='[dim_location.csv].[lsoa_code]' />
+          <map key='[lsoa_code]' value='[fact_table_4.csv].[lsoa_code]' />
+          <map key='[lsoa_name]' value='[dim_location.csv].[lsoa_name]' />
+          <map key='[month]' value='[dim_time.csv].[month]' />
+          <map key='[quarter]' value='[dim_time.csv].[quarter]' />
+          <map key='[time_id (dim_time.csv)]' value='[dim_time.csv].[time_id]' />
+          <map key='[time_id]' value='[fact_table_4.csv].[time_id]' />
+          <map key='[year]' value='[dim_time.csv].[year]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[fact_table_4.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[dim_deprivation.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[dim_location.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[dim_time.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>time_id</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[time_id]</local-name>
+            <parent-name>[fact_table_4.csv]</parent-name>
+            <remote-alias>time_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fact_table_4.csv_BCCA6BB5E4D14C1F924363CAD7B227AB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lsoa_code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[lsoa_code]</local-name>
+            <parent-name>[fact_table_4.csv]</parent-name>
+            <remote-alias>lsoa_code</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[fact_table_4.csv_BCCA6BB5E4D14C1F924363CAD7B227AB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deprivation_level</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[deprivation_level]</local-name>
+            <parent-name>[fact_table_4.csv]</parent-name>
+            <remote-alias>deprivation_level</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[fact_table_4.csv_BCCA6BB5E4D14C1F924363CAD7B227AB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>crime_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[crime_count]</local-name>
+            <parent-name>[fact_table_4.csv]</parent-name>
+            <remote-alias>crime_count</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fact_table_4.csv_BCCA6BB5E4D14C1F924363CAD7B227AB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deprivation_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[deprivation_id]</local-name>
+            <parent-name>[dim_deprivation.csv]</parent-name>
+            <remote-alias>deprivation_id</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dim_deprivation.csv_73DCBE0B620347D8BE4330376DA8846A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deprivation_level</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[deprivation_level (dim_deprivation.csv)]</local-name>
+            <parent-name>[dim_deprivation.csv]</parent-name>
+            <remote-alias>deprivation_level</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[dim_deprivation.csv_73DCBE0B620347D8BE4330376DA8846A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>imd_min</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[imd_min]</local-name>
+            <parent-name>[dim_deprivation.csv]</parent-name>
+            <remote-alias>imd_min</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[dim_deprivation.csv_73DCBE0B620347D8BE4330376DA8846A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>imd_max</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[imd_max]</local-name>
+            <parent-name>[dim_deprivation.csv]</parent-name>
+            <remote-alias>imd_max</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[dim_deprivation.csv_73DCBE0B620347D8BE4330376DA8846A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lsoa_code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[lsoa_code (dim_location.csv)]</local-name>
+            <parent-name>[dim_location.csv]</parent-name>
+            <remote-alias>lsoa_code</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[dim_location.csv_3F83375F31DF40CEB31157755C7F6600]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lsoa_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[lsoa_name]</local-name>
+            <parent-name>[dim_location.csv]</parent-name>
+            <remote-alias>lsoa_name</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[dim_location.csv_3F83375F31DF40CEB31157755C7F6600]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>time_id</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[time_id (dim_time.csv)]</local-name>
+            <parent-name>[dim_time.csv]</parent-name>
+            <remote-alias>time_id</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dim_time.csv_B86DDE8C15EE49A1AB2173030A16A88D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[dim_time.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dim_time.csv_B86DDE8C15EE49A1AB2173030A16A88D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>quarter</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[quarter]</local-name>
+            <parent-name>[dim_time.csv]</parent-name>
+            <remote-alias>quarter</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dim_time.csv_B86DDE8C15EE49A1AB2173030A16A88D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[dim_time.csv]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dim_time.csv_B86DDE8C15EE49A1AB2173030A16A88D]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='dim_deprivation.csv' datatype='table' name='[__tableau_internal_object_id__].[dim_deprivation.csv_73DCBE0B620347D8BE4330376DA8846A]' role='measure' type='quantitative' />
+      <column caption='dim_location.csv' datatype='table' name='[__tableau_internal_object_id__].[dim_location.csv_3F83375F31DF40CEB31157755C7F6600]' role='measure' type='quantitative' />
+      <column caption='dim_time.csv' datatype='table' name='[__tableau_internal_object_id__].[dim_time.csv_B86DDE8C15EE49A1AB2173030A16A88D]' role='measure' type='quantitative' />
+      <column caption='fact_table_4.csv' datatype='table' name='[__tableau_internal_object_id__].[fact_table_4.csv_BCCA6BB5E4D14C1F924363CAD7B227AB]' role='measure' type='quantitative' />
+      <column caption='Crime Count' datatype='integer' name='[crime_count]' role='measure' type='quantitative' />
+      <column caption='Deprivation Id' datatype='integer' name='[deprivation_id]' role='dimension' type='ordinal' />
+      <column caption='Deprivation Level (Dim Deprivation.Csv)' datatype='string' name='[deprivation_level (dim_deprivation.csv)]' role='dimension' type='nominal' />
+      <column caption='Deprivation Level' datatype='string' name='[deprivation_level]' role='dimension' type='nominal' />
+      <column caption='Imd Max' datatype='string' name='[imd_max]' role='dimension' type='nominal' />
+      <column caption='Imd Min' datatype='string' name='[imd_min]' role='dimension' type='nominal' />
+      <column caption='Lsoa Code (Dim Location.Csv)' datatype='string' name='[lsoa_code (dim_location.csv)]' role='dimension' type='nominal' />
+      <column caption='Lsoa Code' datatype='string' name='[lsoa_code]' role='dimension' type='nominal' />
+      <column caption='Lsoa Name' datatype='string' name='[lsoa_name]' role='dimension' type='nominal' />
+      <column caption='Month' datatype='integer' name='[month]' role='dimension' type='quantitative' />
+      <column caption='Quarter' datatype='integer' name='[quarter]' role='dimension' type='quantitative' />
+      <column caption='Time Id (Dim Time.Csv)' datatype='date' name='[time_id (dim_time.csv)]' role='dimension' type='ordinal' />
+      <column caption='Time Id' datatype='date' name='[time_id]' role='dimension' type='ordinal' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/HP/AppData/Local/Temp/TableauTemp/#TableauTemp_10ir08d1vgr3fd14jntzm1mcufbn.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/14/2026 04:26:07 PM' username='tableau_internal_user'>
+          <relation type='collection'>
+            <relation name='fact_table_4.csv_BCCA6BB5E4D14C1F924363CAD7B227AB' table='[Extract].[fact_table_4.csv_BCCA6BB5E4D14C1F924363CAD7B227AB]' type='table' />
+            <relation name='dim_deprivation.csv_73DCBE0B620347D8BE4330376DA8846A' table='[Extract].[dim_deprivation.csv_73DCBE0B620347D8BE4330376DA8846A]' type='table' />
+            <relation name='dim_location.csv_3F83375F31DF40CEB31157755C7F6600' table='[Extract].[dim_location.csv_3F83375F31DF40CEB31157755C7F6600]' type='table' />
+            <relation name='dim_time.csv_B86DDE8C15EE49A1AB2173030A16A88D' table='[Extract].[dim_time.csv_B86DDE8C15EE49A1AB2173030A16A88D]' type='table' />
+          </relation>
+          <cols>
+            <map key='[crime_count]' value='[fact_table_4.csv_BCCA6BB5E4D14C1F924363CAD7B227AB].[crime_count]' />
+            <map key='[deprivation_id]' value='[dim_deprivation.csv_73DCBE0B620347D8BE4330376DA8846A].[deprivation_id]' />
+            <map key='[deprivation_level (dim_deprivation.csv)]' value='[dim_deprivation.csv_73DCBE0B620347D8BE4330376DA8846A].[deprivation_level]' />
+            <map key='[deprivation_level]' value='[fact_table_4.csv_BCCA6BB5E4D14C1F924363CAD7B227AB].[deprivation_level]' />
+            <map key='[imd_max]' value='[dim_deprivation.csv_73DCBE0B620347D8BE4330376DA8846A].[imd_max]' />
+            <map key='[imd_min]' value='[dim_deprivation.csv_73DCBE0B620347D8BE4330376DA8846A].[imd_min]' />
+            <map key='[lsoa_code (dim_location.csv)]' value='[dim_location.csv_3F83375F31DF40CEB31157755C7F6600].[lsoa_code]' />
+            <map key='[lsoa_code]' value='[fact_table_4.csv_BCCA6BB5E4D14C1F924363CAD7B227AB].[lsoa_code]' />
+            <map key='[lsoa_name]' value='[dim_location.csv_3F83375F31DF40CEB31157755C7F6600].[lsoa_name]' />
+            <map key='[month]' value='[dim_time.csv_B86DDE8C15EE49A1AB2173030A16A88D].[month]' />
+            <map key='[quarter]' value='[dim_time.csv_B86DDE8C15EE49A1AB2173030A16A88D].[quarter]' />
+            <map key='[time_id (dim_time.csv)]' value='[dim_time.csv_B86DDE8C15EE49A1AB2173030A16A88D].[time_id]' />
+            <map key='[time_id]' value='[fact_table_4.csv_BCCA6BB5E4D14C1F924363CAD7B227AB].[time_id]' />
+            <map key='[year]' value='[dim_time.csv_B86DDE8C15EE49A1AB2173030A16A88D].[year]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>time_id</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[time_id]</local-name>
+              <parent-name>[fact_table_4.csv_BCCA6BB5E4D14C1F924363CAD7B227AB]</parent-name>
+              <remote-alias>time_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>fact_table_4.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>121</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[fact_table_4.csv_BCCA6BB5E4D14C1F924363CAD7B227AB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>lsoa_code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[lsoa_code]</local-name>
+              <parent-name>[fact_table_4.csv_BCCA6BB5E4D14C1F924363CAD7B227AB]</parent-name>
+              <remote-alias>lsoa_code</remote-alias>
+              <ordinal>1</ordinal>
+              <family>fact_table_4.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27413</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[fact_table_4.csv_BCCA6BB5E4D14C1F924363CAD7B227AB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>deprivation_level</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[deprivation_level]</local-name>
+              <parent-name>[fact_table_4.csv_BCCA6BB5E4D14C1F924363CAD7B227AB]</parent-name>
+              <remote-alias>deprivation_level</remote-alias>
+              <ordinal>2</ordinal>
+              <family>fact_table_4.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[fact_table_4.csv_BCCA6BB5E4D14C1F924363CAD7B227AB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>crime_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[crime_count]</local-name>
+              <parent-name>[fact_table_4.csv_BCCA6BB5E4D14C1F924363CAD7B227AB]</parent-name>
+              <remote-alias>crime_count</remote-alias>
+              <ordinal>3</ordinal>
+              <family>fact_table_4.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>130</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[fact_table_4.csv_BCCA6BB5E4D14C1F924363CAD7B227AB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>deprivation_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[deprivation_id]</local-name>
+              <parent-name>[dim_deprivation.csv_73DCBE0B620347D8BE4330376DA8846A]</parent-name>
+              <remote-alias>deprivation_id</remote-alias>
+              <ordinal>4</ordinal>
+              <family>dim_deprivation.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dim_deprivation.csv_73DCBE0B620347D8BE4330376DA8846A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>deprivation_level</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[deprivation_level (dim_deprivation.csv)]</local-name>
+              <parent-name>[dim_deprivation.csv_73DCBE0B620347D8BE4330376DA8846A]</parent-name>
+              <remote-alias>deprivation_level</remote-alias>
+              <ordinal>5</ordinal>
+              <family>dim_deprivation.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[dim_deprivation.csv_73DCBE0B620347D8BE4330376DA8846A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>imd_min</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[imd_min]</local-name>
+              <parent-name>[dim_deprivation.csv_73DCBE0B620347D8BE4330376DA8846A]</parent-name>
+              <remote-alias>imd_min</remote-alias>
+              <ordinal>6</ordinal>
+              <family>dim_deprivation.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[dim_deprivation.csv_73DCBE0B620347D8BE4330376DA8846A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>imd_max</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[imd_max]</local-name>
+              <parent-name>[dim_deprivation.csv_73DCBE0B620347D8BE4330376DA8846A]</parent-name>
+              <remote-alias>imd_max</remote-alias>
+              <ordinal>7</ordinal>
+              <family>dim_deprivation.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[dim_deprivation.csv_73DCBE0B620347D8BE4330376DA8846A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>lsoa_code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[lsoa_code (dim_location.csv)]</local-name>
+              <parent-name>[dim_location.csv_3F83375F31DF40CEB31157755C7F6600]</parent-name>
+              <remote-alias>lsoa_code</remote-alias>
+              <ordinal>8</ordinal>
+              <family>dim_location.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4880</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[dim_location.csv_3F83375F31DF40CEB31157755C7F6600]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>lsoa_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[lsoa_name]</local-name>
+              <parent-name>[dim_location.csv_3F83375F31DF40CEB31157755C7F6600]</parent-name>
+              <remote-alias>lsoa_name</remote-alias>
+              <ordinal>9</ordinal>
+              <family>dim_location.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4880</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[dim_location.csv_3F83375F31DF40CEB31157755C7F6600]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>time_id</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[time_id (dim_time.csv)]</local-name>
+              <parent-name>[dim_time.csv_B86DDE8C15EE49A1AB2173030A16A88D]</parent-name>
+              <remote-alias>time_id</remote-alias>
+              <ordinal>10</ordinal>
+              <family>dim_time.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>121</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dim_time.csv_B86DDE8C15EE49A1AB2173030A16A88D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[dim_time.csv_B86DDE8C15EE49A1AB2173030A16A88D]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>11</ordinal>
+              <family>dim_time.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dim_time.csv_B86DDE8C15EE49A1AB2173030A16A88D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>quarter</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[quarter]</local-name>
+              <parent-name>[dim_time.csv_B86DDE8C15EE49A1AB2173030A16A88D]</parent-name>
+              <remote-alias>quarter</remote-alias>
+              <ordinal>12</ordinal>
+              <family>dim_time.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dim_time.csv_B86DDE8C15EE49A1AB2173030A16A88D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>month</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[month]</local-name>
+              <parent-name>[dim_time.csv_B86DDE8C15EE49A1AB2173030A16A88D]</parent-name>
+              <remote-alias>month</remote-alias>
+              <ordinal>13</ordinal>
+              <family>dim_time.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dim_time.csv_B86DDE8C15EE49A1AB2173030A16A88D]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='dim_deprivation.csv' id='dim_deprivation.csv_73DCBE0B620347D8BE4330376DA8846A'>
+            <properties context=''>
+              <relation connection='textscan.0vrldej0uvsuom18qzz170ijjv3k' name='dim_deprivation.csv' table='[dim_deprivation#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='integer' name='deprivation_id' ordinal='0' />
+                  <column datatype='string' name='deprivation_level' ordinal='1' />
+                  <column datatype='string' name='imd_min' ordinal='2' />
+                  <column datatype='string' name='imd_max' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='dim_deprivation.csv_73DCBE0B620347D8BE4330376DA8846A' table='[Extract].[dim_deprivation.csv_73DCBE0B620347D8BE4330376DA8846A]' type='table' />
+            </properties>
+          </object>
+          <object caption='dim_location.csv' id='dim_location.csv_3F83375F31DF40CEB31157755C7F6600'>
+            <properties context=''>
+              <relation connection='textscan.0vrldej0uvsuom18qzz170ijjv3k' name='dim_location.csv' table='[dim_location#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='string' name='lsoa_code' ordinal='0' />
+                  <column datatype='string' name='lsoa_name' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='dim_location.csv_3F83375F31DF40CEB31157755C7F6600' table='[Extract].[dim_location.csv_3F83375F31DF40CEB31157755C7F6600]' type='table' />
+            </properties>
+          </object>
+          <object caption='dim_time.csv' id='dim_time.csv_B86DDE8C15EE49A1AB2173030A16A88D'>
+            <properties context=''>
+              <relation connection='textscan.0vrldej0uvsuom18qzz170ijjv3k' name='dim_time.csv' table='[dim_time#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='date' name='time_id' ordinal='0' />
+                  <column datatype='integer' name='year' ordinal='1' />
+                  <column datatype='integer' name='quarter' ordinal='2' />
+                  <column datatype='integer' name='month' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='dim_time.csv_B86DDE8C15EE49A1AB2173030A16A88D' table='[Extract].[dim_time.csv_B86DDE8C15EE49A1AB2173030A16A88D]' type='table' />
+            </properties>
+          </object>
+          <object caption='fact_table_4.csv' id='fact_table_4.csv_BCCA6BB5E4D14C1F924363CAD7B227AB'>
+            <properties context=''>
+              <relation connection='textscan.0vrldej0uvsuom18qzz170ijjv3k' name='fact_table_4.csv' table='[fact_table_4#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='date' name='time_id' ordinal='0' />
+                  <column datatype='string' name='lsoa_code' ordinal='1' />
+                  <column datatype='string' name='deprivation_level' ordinal='2' />
+                  <column datatype='integer' name='crime_count' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='fact_table_4.csv_BCCA6BB5E4D14C1F924363CAD7B227AB' table='[Extract].[fact_table_4.csv_BCCA6BB5E4D14C1F924363CAD7B227AB]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[deprivation_level]' />
+              <expression op='[deprivation_level (dim_deprivation.csv)]' />
+            </expression>
+            <first-end-point object-id='fact_table_4.csv_BCCA6BB5E4D14C1F924363CAD7B227AB' />
+            <second-end-point object-id='dim_deprivation.csv_73DCBE0B620347D8BE4330376DA8846A' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[lsoa_code]' />
+              <expression op='[lsoa_code (dim_location.csv)]' />
+            </expression>
+            <first-end-point object-id='fact_table_4.csv_BCCA6BB5E4D14C1F924363CAD7B227AB' />
+            <second-end-point object-id='dim_location.csv_3F83375F31DF40CEB31157755C7F6600' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[time_id]' />
+              <expression op='[time_id (dim_time.csv)]' />
+            </expression>
+            <first-end-point object-id='fact_table_4.csv_BCCA6BB5E4D14C1F924363CAD7B227AB' />
+            <second-end-point object-id='dim_time.csv_B86DDE8C15EE49A1AB2173030A16A88D' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fact_table_4+' name='federated.0yvr9xp0e1geue173ha0m1bmecde' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yvr9xp0e1geue173ha0m1bmecde'>
+            <column caption='Crime Count' datatype='integer' name='[crime_count]' role='measure' type='quantitative' />
+            <column caption='Lsoa Name' datatype='string' name='[lsoa_name]' role='dimension' type='nominal' />
+            <column-instance column='[lsoa_name]' derivation='None' name='[none:lsoa_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[crime_count]' derivation='Sum' name='[sum:crime_count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0yvr9xp0e1geue173ha0m1bmecde].[sum:crime_count:qk]' included-values='in-range' />
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0yvr9xp0e1geue173ha0m1bmecde].[none:lsoa_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0yvr9xp0e1geue173ha0m1bmecde].[sum:crime_count:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0yvr9xp0e1geue173ha0m1bmecde].[sum:crime_count:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0yvr9xp0e1geue173ha0m1bmecde].[sum:crime_count:qk]' field-type='quantitative' max='9996' min='-1727' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0yvr9xp0e1geue173ha0m1bmecde].[none:lsoa_name:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0yvr9xp0e1geue173ha0m1bmecde].[sum:crime_count:qk]</rows>
+        <cols>[federated.0yvr9xp0e1geue173ha0m1bmecde].[none:lsoa_name:nk]</cols>
+      </table>
+      <simple-id uuid='{CFCABD3A-49E0-4DF4-9D80-B732B57FE756}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Incidents of Violent And Sexual Offences By Deprivation Level</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fact_table_4+' name='federated.0yvr9xp0e1geue173ha0m1bmecde' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yvr9xp0e1geue173ha0m1bmecde'>
+            <column caption='Crime Count' datatype='integer' name='[crime_count]' role='measure' type='quantitative' />
+            <column caption='Deprivation Level (Dim Deprivation.Csv)' datatype='string' name='[deprivation_level (dim_deprivation.csv)]' role='dimension' type='nominal' />
+            <column-instance column='[deprivation_level (dim_deprivation.csv)]' derivation='None' name='[none:deprivation_level (dim_deprivation.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[crime_count]' derivation='Sum' name='[sum:crime_count:qk]' pivot='key' type='quantitative' />
+            <column caption='Time Id (Dim Time.Csv)' datatype='date' name='[time_id (dim_time.csv)]' role='dimension' type='ordinal' />
+            <column-instance column='[time_id (dim_time.csv)]' derivation='Year' name='[yr:time_id (dim_time.csv):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0yvr9xp0e1geue173ha0m1bmecde].[none:deprivation_level (dim_deprivation.csv):nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0yvr9xp0e1geue173ha0m1bmecde].[yr:time_id (dim_time.csv):ok]</rows>
+        <cols>[federated.0yvr9xp0e1geue173ha0m1bmecde].[sum:crime_count:qk]</cols>
+      </table>
+      <simple-id uuid='{355A5F20-9F1F-404C-A33D-4390F7CC19AD}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{AE129193-8AFE-4C2F-A175-EDA30F025B57}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='860' maxwidth='1420' minheight='560' minwidth='1420' sizing-mode='range' />
+      <datasources>
+        <datasource caption='fact_table_4+' name='federated.0yvr9xp0e1geue173ha0m1bmecde' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0yvr9xp0e1geue173ha0m1bmecde'>
+        <column caption='Crime Count' datatype='integer' name='[crime_count]' role='measure' type='quantitative' />
+        <column-instance column='[crime_count]' derivation='Sum' name='[sum:crime_count:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97858' id='7' param='horz' type-v2='layout-flow' w='98874' x='563' y='1071'>
+            <zone h='97858' id='5' type-v2='layout-basic' w='87606' x='563' y='1071'>
+              <zone h='48926' id='3' name='Sheet 1' w='87606' x='563' y='1071'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='48932' id='10' name='Sheet 2' w='87606' x='563' y='49997'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='97858' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='11268' x='88169' y='1071'>
+              <zone h='10308' id='8' name='Sheet 1' param='[federated.0yvr9xp0e1geue173ha0m1bmecde].[sum:crime_count:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='11268' x='88169' y='1071'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='66265' id='9' name='Sheet 1' pane-specification-id='0' param='[federated.0yvr9xp0e1geue173ha0m1bmecde].[none:lsoa_name:nk]' type-v2='color' w='11268' x='88169' y='11379'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='21285' id='11' name='Sheet 2' pane-specification-id='0' param='[federated.0yvr9xp0e1geue173ha0m1bmecde].[none:deprivation_level (dim_deprivation.csv):nk]' type-v2='color' w='11268' x='88169' y='77644'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='800' minheight='800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='15' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97834' id='14' param='vert' type-v2='layout-flow' w='98874' x='563' y='1083'>
+                <zone h='10420' id='8' name='Sheet 1' param='[federated.0yvr9xp0e1geue173ha0m1bmecde].[sum:crime_count:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='11268' x='88169' y='1083'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48915' id='3' is-fixed='true' name='Sheet 1' w='87606' x='563' y='1083'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='65898' id='9' name='Sheet 1' pane-specification-id='0' param='[federated.0yvr9xp0e1geue173ha0m1bmecde].[none:lsoa_name:nk]' type-v2='color' w='11268' x='88169' y='11503'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48919' id='10' is-fixed='true' name='Sheet 2' w='87606' x='563' y='49998'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='21516' id='11' name='Sheet 2' pane-specification-id='0' param='[federated.0yvr9xp0e1geue173ha0m1bmecde].[none:deprivation_level (dim_deprivation.csv):nk]' type-v2='color' w='11268' x='88169' y='77401'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{BE7C4772-2B29-49D0-9A85-7F43858410D7}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='44'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0yvr9xp0e1geue173ha0m1bmecde].[sum:crime_count:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.0yvr9xp0e1geue173ha0m1bmecde].[none:lsoa_name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E37127DF-0DE4-479A-8D55-475EE4F987C9}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0yvr9xp0e1geue173ha0m1bmecde].[none:deprivation_level (dim_deprivation.csv):nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4F6F7672-4339-4705-8CAE-74EE6C1573D9}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A70BC720-D82D-4115-952D-64FD1ECE5F64}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 2' />
+      </viewpoints>
+      <active id='3' />
+      <device-preview visible='true' />
+      <simple-id uuid='{344ADFAE-246A-4BDB-AAD4-2416195A5243}' />
+    </window>
+  </windows>
+</workbook>
