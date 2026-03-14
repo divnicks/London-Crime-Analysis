@@ -19,7 +19,6 @@ A data engineering and analytics project examining crime trends across London's 
 - [Installation & Usage](#installation--usage)
 - [Analysis & Visualizations](#analysis--visualizations)
 - [Recommendations](#recommendations)
-- [Credits](#credits)
 - [References](#references)
 - [License](#license)
 
