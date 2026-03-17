@@ -191,45 +191,7 @@ Police staffing remained broadly stable (2015–2025), yet crime solve rates dec
 
 ---
 
-## Installation & Usage
 
-### Prerequisites
-- R ≥ 4.0 with packages: `tidyverse`, `lubridate`, `janitor`, `stringr`, `readr`
-- Docker (for Hadoop/Hive sandbox — e.g., Hortonworks HDP sandbox)
-- Tableau Desktop (for `.twb` / `.twbx` dashboard files)
-
-### Setup
-
-```bash
-# Clone the repository
-git clone https://github.com/YOUR_USERNAME/london-crime-analysis.git
-cd london-crime-analysis
-
-# Install R dependencies
-Rscript -e "install.packages(c('tidyverse', 'lubridate', 'janitor', 'stringr', 'readr'))"
-```
-
-### Running the ETL Pipeline
-
-```bash
-# Step 1 — Extract and append raw crime CSVs
-Rscript scripts/r/01_extract_crime_data.R
-
-# Step 2 — Clean and transform all datasets
-Rscript scripts/r/02_transform_data.R
-
-# Step 3 — Load cleaned CSV into HDFS (run inside Docker container)
-hdfs dfs -put new_clean_crime_police_deprivation.csv /user/hive/data/crime_data/
-
-# Step 4 — Create warehouse tables in Hive
-hive -f scripts/hiveql/01_create_staging_table.hql
-hive -f scripts/hiveql/02_create_curated_table.hql
-hive -f scripts/hiveql/03_create_dimensions.hql
-hive -f scripts/hiveql/04_create_fact_tables.hql
-```
-
-### Viewing Dashboards
-Open the Tableau workbook files (`.twbx`) in Tableau Desktop. Dashboards are pre-built for all five business questions and connect to Hive via a Cloudera Hadoop connector. To explore offline, the packaged workbooks include extracted data sources.
 
 ---
 
