@@ -16,11 +16,10 @@ A data engineering and analytics project examining crime trends across London's 
 - [ETL Pipeline](#etl-pipeline)
 - [Data Warehouse Design](#data-warehouse-design)
 - [Key Findings](#key-findings)
-- [Installation & Usage](#installation--usage)
 - [Analysis & Visualizations](#analysis--visualizations)
 - [Recommendations](#recommendations)
 - [References](#references)
-- [License](#license)
+
 
 ---
 
