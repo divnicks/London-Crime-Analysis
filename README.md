@@ -239,9 +239,6 @@ Police staffing remained broadly stable (2015–2025), yet crime solve rates dec
 
 ---
 
-## License
-
-This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/) — free to use and adapt with attribution.
 
 ---
 
