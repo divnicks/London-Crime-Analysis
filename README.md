@@ -241,4 +241,3 @@ Police staffing remained broadly stable (2015–2025), yet crime solve rates dec
 
 ---
 
-<p align="center"><strong>ADMP Group 13 · Sheffield Hallam University 🚀</strong></p>
